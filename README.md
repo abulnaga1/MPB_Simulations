@@ -4,17 +4,13 @@ This document introduces a very basic example for simulating a waveguide in the 
 The purpose is not to give a comprehensive introduction to MPB, but rather to demonstrate how it can be used for a variety of applications including calculating band structures, mode profiles, and group velocities both with and without the inclusion of material dispersion. In particular, we demonstrate how MPB can be used for running large parameter sweeps for optimizing some parameter of interest. The mpb code uses the [scheme](https://mpb.readthedocs.io/en/latest/Scheme_User_Interface/) user interface, and can be executed either directly from the terminal or using a workload manager such as [slurm](https://slurm.schedmd.com/sbatch.html). Analysis of the simulation output is done in Matlab, but can readily adapted to Python if desired.
 
 # Table of contents
-1. [Introduction](#introduction)
-2. [Fixed Index Simulations](#fixed_index_sims)
+1. [Fixed Index Simulations](#fixed_index_sims)
     1. [Band simulation](#Band_simulation)
-    2. Electric field simulations
-    3. Mode profile simulation
-3. [Including Matrial Dispersion](#paragraph2)
+    2. [Electric field simulations](#field_simulations)
+    3. [Using a job manager to perform parameter sweeps](#parameter_sweeps)
+2. [Including Matrial Dispersion](#paragraph2)
     1. Material Dipsersion Models
     2. Using SLURM and Matlab to generate a parameter list to simulate
-    
-## This is the introduction <a name="introduction"></a>
-Some introduction text, formatted in heading 2 style
 
 ## Fixed Index Simulations <a name="fixed_index_sims"></a>
 In this section we consider simulating the band diagram of a simple rectangular GaAs waveguide on a diamond substrate, with a background of air.
@@ -97,5 +93,66 @@ Now that we have walked through setting up our simulation code, we can put every
 ```C
 mpb wg3d_gvd.ctl >& wg_gvd.out
 ```
-This executes the simulation and saves the output into the wg_gvd.out file.
-At this point one can use their method of choice for cleaning up and displaying the data. We use matlab for our processing, with all scripts available [here](https://github.com/abulnaga1/MPB_Simulations/tree/master/No%20Dispersion%20Parameter%20Sweeps/MPB%20Analysis%20Code). To look at the &omega; vs k dispersion curve we can simply call the function [band_plotter(h,w)](https://github.com/abulnaga1/MPB_Simulations/edit/master/No%20Dispersion%20Parameter%20Sweeps/MPB%20Analysis%20Code/band_plotter.m) which takes as input the waveguide dimensions (h - height, w - width) and produces a plot Band_Dispersion.fig. We can similarly plot the group velocity and dispersion as a function of wavelength using the [vg_plotter.m](https://github.com/abulnaga1/MPB_Simulations/blob/master/No%20Dispersion%20Parameter%20Sweeps/MPB%20Analysis%20Code/vg_plotter.m) and [D_plotter.m](https://github.com/abulnaga1/MPB_Simulations/blob/master/No%20Dispersion%20Parameter%20Sweeps/MPB%20Analysis%20Code/D_plotter.m) files in the analysis code folder. Examples for our 500nm x 1000nm waveguide are provided below. Again it is extremely important to recognize that these simulations are run at fixed indices of refraction so that material dispersion effects are not included. We will return to the discussion on including material dispersion in a later section.
+This executes the simulation and saves the output into the wg_gvd.out file. Now we can grep the outputs of interest:
+
+```C
+grep freqs wg_gvd.out > wg_gvd-0.5-1-bands.dat
+grep velocity wg_gvd.out > wg_gvd-0.5-1-vel.dat
+```
+
+At this point one can use their method of choice for cleaning up and displaying the data. We use matlab for our processing, with all scripts available [here](https://github.com/abulnaga1/MPB_Simulations/tree/master/No%20Dispersion%20Parameter%20Sweeps/MPB%20Analysis%20Code). To look at the &omega; vs k dispersion curve we can simply call the function [band_plotter(h,w)](https://github.com/abulnaga1/MPB_Simulations/edit/master/No%20Dispersion%20Parameter%20Sweeps/MPB%20Analysis%20Code/band_plotter.m) which takes as input the waveguide dimensions (h - height, w - width) and produces a plot Band_Dispersion.fig. We can similarly plot the group velocity and dispersion as a function of wavelength using the [vg_plotter.m](https://github.com/abulnaga1/MPB_Simulations/blob/master/No%20Dispersion%20Parameter%20Sweeps/MPB%20Analysis%20Code/vg_plotter.m) and [D_plotter.m](https://github.com/abulnaga1/MPB_Simulations/blob/master/No%20Dispersion%20Parameter%20Sweeps/MPB%20Analysis%20Code/D_plotter.m) files in the analysis code folder. Our matlab code assumes the mpb outputs to be stored in a folder named "h-w" where h and w correspond to the height and width of the waveguide respectively. Importantly the dispersion is calculated from the group velocity curve; it is not a direct simulation output. Example plots for our 500nm x 1000nm waveguide can be found in the [examples folder](https://github.com/abulnaga1/MPB_Simulations/tree/master/No%20Dispersion%20Parameter%20Sweeps/Examples/500nm%20x%20100nm%20waveguide) and are provided below. Again it is extremely important to recognize that these simulations are run at fixed indices of refraction so that material dispersion effects are not included. We will return to the discussion on including material dispersion in a later section.
+
+![alt text](https://github.com/abulnaga1/MPB_Simulations/blob/master/No%20Dispersion%20Parameter%20Sweeps/Examples/500nm%20x%20100nm%20waveguide/band_Dispersion.png "Band dispersion") 
+![alt text](https://github.com/abulnaga1/MPB_Simulations/blob/master/No%20Dispersion%20Parameter%20Sweeps/Examples/500nm%20x%20100nm%20waveguide/Vg_vs_L_real_units.png "Group velocity")
+![alt text](https://github.com/abulnaga1/MPB_Simulations/blob/master/No%20Dispersion%20Parameter%20Sweeps/Examples/500nm%20x%20100nm%20waveguide/Dispersion_vs_L_real_units.png "Dispersion")
+
+
+### Electric Field Simulations <a name="field_simulations"></a>
+In addition to simulating the band dispersion for our waveguide, we can look at the complex-valued electric field amplitude. The simulation file [wg3d_e_fields](https://github.com/abulnaga1/MPB_Simulations/blob/master/No%20Dispersion%20Parameter%20Sweeps/MPB%20Simulation%20Code/wg3d_e_fields.ctl) is quite similar to our band simulation in the previous section with a few key changes. We will make use of the mpb [find-k](https://mpb.readthedocs.io/en/latest/Scheme_User_Interface/#the-inverse-problem-k-as-a-function-of-frequency) feature to solve for the electric field at a chosen frequency without knowing apriori the corresponding k-point. At the top of our simulation window we add the following four commands
+
+```scheme
+(define-param omega 0.64516)    ;w_1550 = 0.64516129032 , w_946 = 1.05708245243
+(define-param kguess 2.5)		;Guessed k value
+(define-param kmin 0)			;kmin_tel = 0, kmin_siv = 1.5
+(define-param kmax 5)           ;kmax_tel = 3, kmax_siv = 4.5 
+```
+
+As the names suggest, omega is the frequency point of interest in mpb units. In this case, an mpb frequency of 0.64516 corresponds to a free space wavelength of 1550nm.
+To find the k-point corresponding to this frequency and calculate the electric fields at this point we simply run the following command
+
+```scheme
+(find-k NO-PARITY omega 1 1 (vector3 1 0 0) 0.0001 kguess kmin kmax fix-efield-phase output-efield)
+```
+As before we run the simulation from our terminal using the mpb command
+
+```C
+wg3d_e_fields.ctl >& wg3d_e_fields_tel-0.5-1.out
+```
+
+The field amplitudes are saved as a .h5 file 'wg3d_e_fields-e.k01.b01.h5'. One can use their h5 editor of choice to analyze the fields, or if more convenient this data can be converted to .txt files for further processing.
+
+```
+h5totxt -0 -x 0 wg3d_e_fields-e.k01.b01.h5:x.i >& e-1550-h-0.5-w-1-x-i.txt
+h5totxt -0 -x 0 wg3d_e_fields-e.k01.b01.h5:x.r >& e-1550-h-0.5-w-1-x-r.txt
+h5totxt -0 -x 0 wg3d_e_fields-e.k01.b01.h5:y.i >& e-1550-h-0.5-w-1-y-i.txt
+h5totxt -0 -x 0 wg3d_e_fields-e.k01.b01.h5:y.r >& e-1550-h-0.5-w-1-y-r.txt
+h5totxt -0 -x 0 wg3d_e_fields-e.k01.b01.h5:z.i >& e-1550-h-0.5-w-1-z-i.txt
+h5totxt -0 -x 0 wg3d_e_fields-e.k01.b01.h5:z.r >& e-1550-h-0.5-w-1-z-r.txt
+```
+
+Where we have separately extracted each field amplitude component. The matlab file [overlap_calculator.m](https://github.com/abulnaga1/MPB_Simulations/blob/master/No%20Dispersion%20Parameter%20Sweeps/MPB%20Analysis%20Code/overlap_calculator.m) provides an example of how one can simulate the field amplitudes at two different frequencies then approximate the overlap between the two modes using a trapezoidal integral. This code restricts the integral to the waveguide region and so the output dielectric profile is required. MPB provides the dielectric function in .h5 format which can also be converted to text.
+
+```C
+h5totxt -0 -x 0 wg3d_e_fields-epsilon.h5:data >& epsilon-0.5-1.txt
+```
+
+Where we have taken a slice of the YZ plane in which our waveguide is defined by specifying the normal axis by the "-x" flag.
+If instead of the full field amplitudes we only wanted the field power, we could modify our run command as follows
+
+```scheme
+(find-k NO-PARITY omega 1 1 (vector3 1 0 0) 0.0001 kguess kmin kmax output-dpwr)
+```
+and simply use the [h5topng](https://github.com/NanoComp/h5utils/blob/master/doc/h5topng-man.md) command to produce an image of the mode profile.
+
+
+### Using a Job Manager to Perform Parameter Sweeps <a name="parameter_sweeps"></a>

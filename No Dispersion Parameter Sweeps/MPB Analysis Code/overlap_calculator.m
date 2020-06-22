@@ -1,4 +1,4 @@
-function overlap = overlap_calculator(hname,wname,eps_hi)
+function overlap = overlap_calculator(h,w,eps_hi)
 %Authors:   Alex Abulnaga, Sacha Welinski
 %Date:      2019-08-15
 %Title:     overlap_calculator.m
@@ -14,6 +14,8 @@ function overlap = overlap_calculator(hname,wname,eps_hi)
 %                             at 946nm and 1550nm
 
 %Import the dielectric function
+hname = num2str(h);
+wname = num2str(w);
 folder=strcat(hname,'-',wname);
 
 epsilon_file = strcat('epsilon-',hname,'-',wname,'.txt');
