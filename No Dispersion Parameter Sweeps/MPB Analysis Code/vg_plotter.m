@@ -32,7 +32,7 @@ xline(946,'k--');
 xline(1550,'k--');
 
 title('Group velocity vs wavelength')
-xlabel('\lambda (nm)')
+xlabel('Wavelength (nm)')
 ylabel('vg/c')
 %xlim(xlimits);
 saveas(gcf,'Vg_vs_L_real_units.fig');
