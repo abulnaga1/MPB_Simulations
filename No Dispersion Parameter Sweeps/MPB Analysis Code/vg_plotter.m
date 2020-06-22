@@ -1,4 +1,4 @@
-function vg_plotter(xlimits,h,w)
+function vg_plotter(h,w)%,legend_string)
 %Authors:   Alex Abulnaga, Sacha Welinski
 %Date:      2019-08-15
 %Title:     vg_plotter.m
@@ -28,12 +28,13 @@ for i = 1:length(h)
 end
 
 %Plot vertical lines at 946nm and 1550nm
-%xline(946,'k--');
-%xline(1550,'k--');
+xline(946,'k--');
+xline(1550,'k--');
 
 title('Group velocity vs wavelength')
 xlabel('\lambda (nm)')
 ylabel('vg/c')
+%xlim(xlimits);
 saveas(gcf,'Vg_vs_L_real_units.fig');
 
 end

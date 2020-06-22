@@ -1,4 +1,4 @@
-function vg_plotter(xlimits,h,w)%,legend_string)
+function vg_plotter(h,w)%,legend_string)
 %Authors:   Alex Abulnaga, Sacha Welinski
 %Date:      2019-08-15
 %Title:     vg_plotter.m

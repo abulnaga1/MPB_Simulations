@@ -1,10 +1,10 @@
-function D_plotter(h,w)%,legend_string)
+function D_plotter(h,w)
 %Authors:   Alex Abulnaga, Sacha Welinski
 %Date:      2019-08-15
-%Title:     GVD_plotter.m
-%function overlap = GVD_plotter(xlimits,h,w)
+%Title:     D_plotter.m
+%function overlap = D_plotter(xlimits,h,w)
 %Description:       Given desired xlimits, and a set of parameters (h,w),
-%                   band_plotter plots the GVD curves for these
+%                   band_plotter plots the Dispersion curves for these
 %                   parameters
 %Input Variables:   xlimits - Desired x limits
 %                   h       - waveguide heights
@@ -24,21 +24,18 @@ for i = 1:length(h)
         
         freqs = band_importer(hname,wname);
         velocities = velocity_importer(hname,wname);
-        GVD = gvd_calculator(freqs,velocities);
+        D = D_calculator(freqs,velocities);
         wavelengths = 1e9*2*pi*c./(freqs.*(c*2*pi/a));
         
-        plot(wavelengths,GVD);
+        plot(wavelengths,D);
     end
 end
 plot(wavelengths,zeros(size(wavelengths)),'k--');
 hold on;
 xline(1250,'k--');
-title('Group Velocity Dispersion')
+title('Dispersion')
 xlabel('Wavelength (nm)')
 ylabel('D (ps.km^{-1}.nm^{-1})')
-%ylim([-0.5e4 0.5e4])
-%xlim(xlimits)
-%legend(legend_string)
-saveas(gcf,'GVD_Curves.fig')
+saveas(gcf,'D_Curves.fig')
 hold off;
 end

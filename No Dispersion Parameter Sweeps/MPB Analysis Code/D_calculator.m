@@ -1,4 +1,4 @@
-function [D, D_zerocross] = D_calculator(freqs,velocities)
+function [D, D_1250, D_zerocross] = D_calculator(freqs,velocities)
 %Authors:   Alex Abulnaga, Sacha Welinski
 %Date:      2019-08-15
 %Title:     D_calculator.m
@@ -27,7 +27,7 @@ wavelengths = 1e9*2*pi*c./(freqs.*(c*2*pi/a));
 %Calculate the D
 D = (-1e15./((c.*velocities).^2)).*(gradient(c.*velocities)./gradient(wavelengths)');
 
-%Find the Dispersion Zero-cross point
+%Find the D Zero-cross point around 1250nm
 D_zerocross = 0;
 for i = 1:(length(D)-1)
     if D(i)<0 && D(i+1)>0
@@ -37,4 +37,10 @@ for i = 1:(length(D)-1)
         D_zerocross = interp1(D(i:i+1),wavelengths(i:i+1),0);  
     end
 end
+
+%D_zerocross = length(D(D>0));
+
+%approximate the value of the D at 1250nm
+D_1250 = interp1(wavelengths,D,1250);
+
 end

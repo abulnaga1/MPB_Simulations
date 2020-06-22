@@ -1,0 +1,1832 @@
+init-params: initializing eigensolver data
+Computing 1 bands with 1.000000e-07 tolerance.
+Working in 3 dimensions.
+Grid size is 1 x 640 x 640.
+Solving for 1 bands at a time.
+Creating Maxwell data...
+Allocating fields...
+Mesh size is 3.
+Lattice vectors:
+     (1, 0, 0)
+     (0, 10, 0)
+     (0, 0, 10)
+Cell volume = 100
+Reciprocal lattice vectors (/ 2 pi):
+     (1, -0, 0)
+     (-0, 0.1, -0)
+     (0, -0, 0.1)
+Geometric objects:
+     block, center = (0,0,-1.91667)
+          size (1e+20,10,3.33333)
+          axes (1,0,0), (0,1,0), (0,0,1)
+          dielectric constant epsilon = 5.7
+     block, center = (0,0,0)
+          size (1e+20,1,0.5)
+          axes (1,0,0), (0,1,0), (0,0,1)
+          dielectric constant epsilon = 12
+Geometric object tree has depth 3 and 18 object nodes (vs. 2 actual objects)
+Initializing dielectric function...
+252 k-points:
+     (0,0,0)
+     (0.0199203,0,0)
+     (0.0398406,0,0)
+     (0.059761,0,0)
+     (0.0796813,0,0)
+     (0.0996016,0,0)
+     (0.119522,0,0)
+     (0.139442,0,0)
+     (0.159363,0,0)
+     (0.179283,0,0)
+     (0.199203,0,0)
+     (0.219124,0,0)
+     (0.239044,0,0)
+     (0.258964,0,0)
+     (0.278884,0,0)
+     (0.298805,0,0)
+     (0.318725,0,0)
+     (0.338645,0,0)
+     (0.358566,0,0)
+     (0.378486,0,0)
+     (0.398406,0,0)
+     (0.418327,0,0)
+     (0.438247,0,0)
+     (0.458167,0,0)
+     (0.478088,0,0)
+     (0.498008,0,0)
+     (0.517928,0,0)
+     (0.537849,0,0)
+     (0.557769,0,0)
+     (0.577689,0,0)
+     (0.59761,0,0)
+     (0.61753,0,0)
+     (0.63745,0,0)
+     (0.657371,0,0)
+     (0.677291,0,0)
+     (0.697211,0,0)
+     (0.717131,0,0)
+     (0.737052,0,0)
+     (0.756972,0,0)
+     (0.776892,0,0)
+     (0.796813,0,0)
+     (0.816733,0,0)
+     (0.836653,0,0)
+     (0.856574,0,0)
+     (0.876494,0,0)
+     (0.896414,0,0)
+     (0.916335,0,0)
+     (0.936255,0,0)
+     (0.956175,0,0)
+     (0.976096,0,0)
+     (0.996016,0,0)
+     (1.01594,0,0)
+     (1.03586,0,0)
+     (1.05578,0,0)
+     (1.0757,0,0)
+     (1.09562,0,0)
+     (1.11554,0,0)
+     (1.13546,0,0)
+     (1.15538,0,0)
+     (1.1753,0,0)
+     (1.19522,0,0)
+     (1.21514,0,0)
+     (1.23506,0,0)
+     (1.25498,0,0)
+     (1.2749,0,0)
+     (1.29482,0,0)
+     (1.31474,0,0)
+     (1.33466,0,0)
+     (1.35458,0,0)
+     (1.3745,0,0)
+     (1.39442,0,0)
+     (1.41434,0,0)
+     (1.43426,0,0)
+     (1.45418,0,0)
+     (1.4741,0,0)
+     (1.49402,0,0)
+     (1.51394,0,0)
+     (1.53386,0,0)
+     (1.55378,0,0)
+     (1.57371,0,0)
+     (1.59363,0,0)
+     (1.61355,0,0)
+     (1.63347,0,0)
+     (1.65339,0,0)
+     (1.67331,0,0)
+     (1.69323,0,0)
+     (1.71315,0,0)
+     (1.73307,0,0)
+     (1.75299,0,0)
+     (1.77291,0,0)
+     (1.79283,0,0)
+     (1.81275,0,0)
+     (1.83267,0,0)
+     (1.85259,0,0)
+     (1.87251,0,0)
+     (1.89243,0,0)
+     (1.91235,0,0)
+     (1.93227,0,0)
+     (1.95219,0,0)
+     (1.97211,0,0)
+     (1.99203,0,0)
+     (2.01195,0,0)
+     (2.03187,0,0)
+     (2.05179,0,0)
+     (2.07171,0,0)
+     (2.09163,0,0)
+     (2.11155,0,0)
+     (2.13147,0,0)
+     (2.15139,0,0)
+     (2.17131,0,0)
+     (2.19124,0,0)
+     (2.21116,0,0)
+     (2.23108,0,0)
+     (2.251,0,0)
+     (2.27092,0,0)
+     (2.29084,0,0)
+     (2.31076,0,0)
+     (2.33068,0,0)
+     (2.3506,0,0)
+     (2.37052,0,0)
+     (2.39044,0,0)
+     (2.41036,0,0)
+     (2.43028,0,0)
+     (2.4502,0,0)
+     (2.47012,0,0)
+     (2.49004,0,0)
+     (2.50996,0,0)
+     (2.52988,0,0)
+     (2.5498,0,0)
+     (2.56972,0,0)
+     (2.58964,0,0)
+     (2.60956,0,0)
+     (2.62948,0,0)
+     (2.6494,0,0)
+     (2.66932,0,0)
+     (2.68924,0,0)
+     (2.70916,0,0)
+     (2.72908,0,0)
+     (2.749,0,0)
+     (2.76892,0,0)
+     (2.78884,0,0)
+     (2.80876,0,0)
+     (2.82869,0,0)
+     (2.84861,0,0)
+     (2.86853,0,0)
+     (2.88845,0,0)
+     (2.90837,0,0)
+     (2.92829,0,0)
+     (2.94821,0,0)
+     (2.96813,0,0)
+     (2.98805,0,0)
+     (3.00797,0,0)
+     (3.02789,0,0)
+     (3.04781,0,0)
+     (3.06773,0,0)
+     (3.08765,0,0)
+     (3.10757,0,0)
+     (3.12749,0,0)
+     (3.14741,0,0)
+     (3.16733,0,0)
+     (3.18725,0,0)
+     (3.20717,0,0)
+     (3.22709,0,0)
+     (3.24701,0,0)
+     (3.26693,0,0)
+     (3.28685,0,0)
+     (3.30677,0,0)
+     (3.32669,0,0)
+     (3.34661,0,0)
+     (3.36653,0,0)
+     (3.38645,0,0)
+     (3.40637,0,0)
+     (3.42629,0,0)
+     (3.44622,0,0)
+     (3.46614,0,0)
+     (3.48606,0,0)
+     (3.50598,0,0)
+     (3.5259,0,0)
+     (3.54582,0,0)
+     (3.56574,0,0)
+     (3.58566,0,0)
+     (3.60558,0,0)
+     (3.6255,0,0)
+     (3.64542,0,0)
+     (3.66534,0,0)
+     (3.68526,0,0)
+     (3.70518,0,0)
+     (3.7251,0,0)
+     (3.74502,0,0)
+     (3.76494,0,0)
+     (3.78486,0,0)
+     (3.80478,0,0)
+     (3.8247,0,0)
+     (3.84462,0,0)
+     (3.86454,0,0)
+     (3.88446,0,0)
+     (3.90438,0,0)
+     (3.9243,0,0)
+     (3.94422,0,0)
+     (3.96414,0,0)
+     (3.98406,0,0)
+     (4.00398,0,0)
+     (4.0239,0,0)
+     (4.04382,0,0)
+     (4.06375,0,0)
+     (4.08367,0,0)
+     (4.10359,0,0)
+     (4.12351,0,0)
+     (4.14343,0,0)
+     (4.16335,0,0)
+     (4.18327,0,0)
+     (4.20319,0,0)
+     (4.22311,0,0)
+     (4.24303,0,0)
+     (4.26295,0,0)
+     (4.28287,0,0)
+     (4.30279,0,0)
+     (4.32271,0,0)
+     (4.34263,0,0)
+     (4.36255,0,0)
+     (4.38247,0,0)
+     (4.40239,0,0)
+     (4.42231,0,0)
+     (4.44223,0,0)
+     (4.46215,0,0)
+     (4.48207,0,0)
+     (4.50199,0,0)
+     (4.52191,0,0)
+     (4.54183,0,0)
+     (4.56175,0,0)
+     (4.58167,0,0)
+     (4.60159,0,0)
+     (4.62151,0,0)
+     (4.64143,0,0)
+     (4.66135,0,0)
+     (4.68127,0,0)
+     (4.7012,0,0)
+     (4.72112,0,0)
+     (4.74104,0,0)
+     (4.76096,0,0)
+     (4.78088,0,0)
+     (4.8008,0,0)
+     (4.82072,0,0)
+     (4.84064,0,0)
+     (4.86056,0,0)
+     (4.88048,0,0)
+     (4.9004,0,0)
+     (4.92032,0,0)
+     (4.94024,0,0)
+     (4.96016,0,0)
+     (4.98008,0,0)
+     (5,0,0)
+Solving for band polarization: .
+Initializing fields to random numbers...
+elapsed time for initialization: 1 seconds.
+epsilon: 1-12, mean 2.62167, harm. mean 1.38916, 33.9453% > 1, 14.7424% "fill"
+Outputting wg3d_gvd-epsilon...
+solve_kpoint (0,0,0):
+freqs:, k index, k1, k2, k3, kmag/2pi, band 1
+freqs:, 1, 0, 0, 0, 0, 0
+elapsed time for k point: 0 seconds.
+velocity:, 1, #(0.0 0.0 0.0)
+solve_kpoint (0.0199203,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 8 iterations.
+freqs:, 2, 0.0199203, 0, 0, 0.0199203, 0.0122573
+elapsed time for k point: 4 seconds.
+velocity:, 2, #(0.6025833244669949 1.576665807458657e-10 9.018335575315397e-11)
+solve_kpoint (0.0398406,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 7 iterations.
+freqs:, 3, 0.0398406, 0, 0, 0.0398406, 0.0238092
+elapsed time for k point: 5 seconds.
+velocity:, 3, #(0.5539955037881363 3.0545618179251335e-10 -1.6825261931567617e-10)
+solve_kpoint (0.059761,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 6 iterations.
+freqs:, 4, 0.059761, 0, 0, 0.059761, 0.0342847
+elapsed time for k point: 4 seconds.
+velocity:, 4, #(0.49860901445443556 1.4275819297303708e-10 -1.712432865097784e-10)
+solve_kpoint (0.0796813,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 6 iterations.
+freqs:, 5, 0.0796813, 0, 0, 0.0796813, 0.0437593
+elapsed time for k point: 4 seconds.
+velocity:, 5, #(0.45550847738481554 9.04326014829029e-11 -1.525458785542306e-10)
+solve_kpoint (0.0996016,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 7 iterations.
+freqs:, 6, 0.0996016, 0, 0, 0.0996016, 0.0525448
+elapsed time for k point: 4 seconds.
+velocity:, 6, #(0.42908304072223746 5.693832958968886e-10 -1.6859334815466698e-11)
+solve_kpoint (0.119522,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 7 iterations.
+freqs:, 7, 0.119522, 0, 0, 0.119522, 0.0609358
+elapsed time for k point: 3 seconds.
+velocity:, 7, #(0.41492966384508506 7.530690717040338e-10 2.6445060926744577e-11)
+solve_kpoint (0.139442,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 7 iterations.
+freqs:, 8, 0.139442, 0, 0, 0.139442, 0.0691228
+elapsed time for k point: 3 seconds.
+velocity:, 8, #(0.40788936331719905 9.150143041566028e-10 6.27899199070272e-11)
+solve_kpoint (0.159363,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 8 iterations.
+freqs:, 9, 0.159363, 0, 0, 0.159363, 0.077211
+elapsed time for k point: 4 seconds.
+velocity:, 9, #(0.40460152707395713 2.6049668587848426e-10 2.397791865612636e-10)
+solve_kpoint (0.179283,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 8 iterations.
+freqs:, 10, 0.179283, 0, 0, 0.179283, 0.085255
+elapsed time for k point: 3 seconds.
+velocity:, 10, #(0.4032344850601213 1.2983636873396414e-10 2.3433790822473783e-10)
+solve_kpoint (0.199203,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 9 iterations.
+freqs:, 11, 0.199203, 0, 0, 0.199203, 0.0932826
+elapsed time for k point: 3 seconds.
+velocity:, 11, #(0.4028532319357977 -2.3024059942561502e-10 -5.858738770457633e-11)
+solve_kpoint (0.219124,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 9 iterations.
+freqs:, 12, 0.219124, 0, 0, 0.219124, 0.101308
+elapsed time for k point: 4 seconds.
+velocity:, 12, #(0.4029817288573878 -3.3122480180858683e-10 -7.475483454806612e-11)
+solve_kpoint (0.239044,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 9 iterations.
+freqs:, 13, 0.239044, 0, 0, 0.239044, 0.109339
+elapsed time for k point: 4 seconds.
+velocity:, 13, #(0.40337443748512597 -3.977606951180416e-10 -9.119938136053531e-11)
+solve_kpoint (0.258964,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 9 iterations.
+freqs:, 14, 0.258964, 0, 0, 0.258964, 0.11738
+elapsed time for k point: 4 seconds.
+velocity:, 14, #(0.4038999109931178 -4.3683384516995196e-10 -1.0861324271256917e-10)
+solve_kpoint (0.278884,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 9 iterations.
+freqs:, 15, 0.278884, 0, 0, 0.278884, 0.125431
+elapsed time for k point: 4 seconds.
+velocity:, 15, #(0.404485115764112 -4.4614587401481293e-10 -1.2752043000022723e-10)
+solve_kpoint (0.298805,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 9 iterations.
+freqs:, 16, 0.298805, 0, 0, 0.298805, 0.133495
+elapsed time for k point: 5 seconds.
+velocity:, 16, #(0.4050878032352545 -4.2393067551534904e-10 -1.481739427804508e-10)
+solve_kpoint (0.318725,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 9 iterations.
+freqs:, 17, 0.318725, 0, 0, 0.318725, 0.14157
+elapsed time for k point: 6 seconds.
+velocity:, 17, #(0.40568249143645496 -3.678017516129574e-10 -1.7095016129568106e-10)
+solve_kpoint (0.338645,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 9 iterations.
+freqs:, 18, 0.338645, 0, 0, 0.338645, 0.149657
+elapsed time for k point: 4 seconds.
+velocity:, 18, #(0.4062530052201825 -2.7425196681231966e-10 -1.9683203989602474e-10)
+solve_kpoint (0.358566,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 9 iterations.
+freqs:, 19, 0.358566, 0, 0, 0.358566, 0.157755
+elapsed time for k point: 4 seconds.
+velocity:, 19, #(0.406788222403276 -1.5024173950850382e-10 -2.2765896514703677e-10)
+solve_kpoint (0.378486,0,0):
+Solving for bands 1 to 1...
+    iteration   11: trace = 0.02751079286062809 (5.7542e-06% change)
+Finished solving for bands 1 to 1 after 11 iterations.
+freqs:, 20, 0.378486, 0, 0, 0.378486, 0.165864
+elapsed time for k point: 5 seconds.
+velocity:, 20, #(0.40727906457778795 -1.0901764690670803e-9 2.410525614107586e-10)
+solve_kpoint (0.398406,0,0):
+Solving for bands 1 to 1...
+    iteration    9: trace = 0.03026952736328608 (1.22548e-05% change)
+Finished solving for bands 1 to 1 after 11 iterations.
+freqs:, 21, 0.398406, 0, 0, 0.398406, 0.173981
+elapsed time for k point: 6 seconds.
+velocity:, 21, #(0.4077175768324552 -1.6256474003884631e-9 2.4656880717491385e-10)
+solve_kpoint (0.418327,0,0):
+Solving for bands 1 to 1...
+    iteration   11: trace = 0.03316299941176283 (1.19687e-05% change)
+Finished solving for bands 1 to 1 after 13 iterations.
+freqs:, 22, 0.418327, 0, 0, 0.418327, 0.182107
+elapsed time for k point: 6 seconds.
+velocity:, 22, #(0.4080930224656541 1.662136933886787e-9 7.726380834792832e-11)
+solve_kpoint (0.438247,0,0):
+Solving for bands 1 to 1...
+    iteration   11: trace = 0.03619109255927903 (1.59675e-05% change)
+Finished solving for bands 1 to 1 after 13 iterations.
+freqs:, 23, 0.438247, 0, 0, 0.438247, 0.19024
+elapsed time for k point: 6 seconds.
+velocity:, 23, #(0.40838981318360845 2.574302441184151e-9 2.037102771350245e-10)
+solve_kpoint (0.458167,0,0):
+Solving for bands 1 to 1...
+    iteration   10: trace = 0.03935342660852874 (3.313e-05% change)
+Finished solving for bands 1 to 1 after 13 iterations.
+freqs:, 24, 0.458167, 0, 0, 0.458167, 0.198377
+elapsed time for k point: 7 seconds.
+velocity:, 24, #(0.4085829144340379 3.934235277307099e-9 6.116940008956401e-10)
+solve_kpoint (0.478088,0,0):
+Solving for bands 1 to 1...
+    iteration    9: trace = 0.04264924087024463 (4.45204e-05% change)
+Finished solving for bands 1 to 1 after 15 iterations.
+freqs:, 25, 0.478088, 0, 0, 0.478088, 0.206517
+elapsed time for k point: 10 seconds.
+velocity:, 25, #(0.4086288477213668 -3.780399373502135e-9 -3.6442611364294927e-10)
+solve_kpoint (0.498008,0,0):
+Solving for bands 1 to 1...
+    iteration    9: trace = 0.0460770697789076 (6.29116e-05% change)
+Finished solving for bands 1 to 1 after 16 iterations.
+freqs:, 26, 0.498008, 0, 0, 0.498008, 0.214655
+elapsed time for k point: 9 seconds.
+velocity:, 26, #(0.4084450498439503 1.3463126777136054e-9 2.087146882286952e-10)
+solve_kpoint (0.517928,0,0):
+Solving for bands 1 to 1...
+    iteration   11: trace = 0.04963411554487158 (9.9766e-05% change)
+Finished solving for bands 1 to 1 after 17 iterations.
+freqs:, 27, 0.517928, 0, 0, 0.517928, 0.222787
+elapsed time for k point: 7 seconds.
+velocity:, 27, #(0.40786858941089105 2.398605426951152e-9 8.500738760393234e-11)
+solve_kpoint (0.537849,0,0):
+Solving for bands 1 to 1...
+    iteration   11: trace = 0.05331515258750744 (0.000204902% change)
+Finished solving for bands 1 to 1 after 17 iterations.
+freqs:, 28, 0.537849, 0, 0, 0.537849, 0.2309
+elapsed time for k point: 7 seconds.
+velocity:, 28, #(0.40653597944079706 -1.4871147177798999e-8 1.1308814424905067e-9)
+solve_kpoint (0.557769,0,0):
+Solving for bands 1 to 1...
+    iteration   11: trace = 0.05710860651352449 (0.000440399% change)
+Finished solving for bands 1 to 1 after 19 iterations.
+freqs:, 29, 0.557769, 0, 0, 0.557769, 0.238973
+elapsed time for k point: 9 seconds.
+velocity:, 29, #(0.40355875543201836 -8.603899344105957e-9 1.813308873040733e-9)
+solve_kpoint (0.577689,0,0):
+Solving for bands 1 to 1...
+    iteration   10: trace = 0.06098757878054435 (0.000787391% change)
+    iteration   20: trace = 0.06098549486708092 (7.38176e-06% change)
+Finished solving for bands 1 to 1 after 20 iterations.
+freqs:, 30, 0.577689, 0, 0, 0.577689, 0.246952
+elapsed time for k point: 10 seconds.
+velocity:, 30, #(0.39657117561007194 2.125995738342407e-8 -5.518541904345701e-9)
+solve_kpoint (0.59761,0,0):
+Solving for bands 1 to 1...
+    iteration    9: trace = 0.06488293359793132 (0.00317942% change)
+    iteration   18: trace = 0.06487648569365896 (8.95311e-05% change)
+Finished solving for bands 1 to 1 after 22 iterations.
+freqs:, 31, 0.59761, 0, 0, 0.59761, 0.254709
+elapsed time for k point: 12 seconds.
+velocity:, 31, #(0.3798233312513141 -2.985199160005961e-8 6.238701562309264e-9)
+solve_kpoint (0.61753,0,0):
+Solving for bands 1 to 1...
+    iteration   10: trace = 0.06864238687157034 (0.00360247% change)
+    iteration   21: trace = 0.06863445648517059 (2.4273e-05% change)
+Finished solving for bands 1 to 1 after 23 iterations.
+freqs:, 32, 0.61753, 0, 0, 0.61753, 0.261982
+elapsed time for k point: 9 seconds.
+velocity:, 32, #(0.34839564530493133 -2.0854958240974627e-8 3.836485829708485e-9)
+solve_kpoint (0.63745,0,0):
+Solving for bands 1 to 1...
+    iteration   11: trace = 0.07213960609047572 (0.00171412% change)
+    iteration   22: trace = 0.07213613531894437 (6.13704e-06% change)
+Finished solving for bands 1 to 1 after 22 iterations.
+freqs:, 33, 0.63745, 0, 0, 0.63745, 0.268582
+elapsed time for k point: 9 seconds.
+velocity:, 33, #(0.3156887512279173 -3.594893183340094e-8 2.878357513552061e-9)
+solve_kpoint (0.657371,0,0):
+Solving for bands 1 to 1...
+    iteration   11: trace = 0.07542716889205361 (0.000587387% change)
+Finished solving for bands 1 to 1 after 20 iterations.
+freqs:, 34, 0.657371, 0, 0, 0.657371, 0.274638
+elapsed time for k point: 9 seconds.
+velocity:, 34, #(0.29425622752739755 -2.9548934427376877e-8 2.9894461758283046e-9)
+solve_kpoint (0.677291,0,0):
+Solving for bands 1 to 1...
+    iteration   10: trace = 0.07860418745553512 (0.000495024% change)
+Finished solving for bands 1 to 1 after 18 iterations.
+freqs:, 35, 0.677291, 0, 0, 0.677291, 0.280364
+elapsed time for k point: 8 seconds.
+velocity:, 35, #(0.28165214896266383 -4.673432321657375e-8 6.598397892775163e-9)
+solve_kpoint (0.697211,0,0):
+Solving for bands 1 to 1...
+    iteration    9: trace = 0.0817341625325133 (0.000333297% change)
+Finished solving for bands 1 to 1 after 15 iterations.
+freqs:, 36, 0.697211, 0, 0, 0.697211, 0.285891
+elapsed time for k point: 7 seconds.
+velocity:, 36, #(0.27391079988515554 -1.914298658509488e-8 4.266284586162476e-9)
+solve_kpoint (0.717131,0,0):
+Solving for bands 1 to 1...
+    iteration   10: trace = 0.084852290271801 (9.62233e-05% change)
+Finished solving for bands 1 to 1 after 13 iterations.
+freqs:, 37, 0.717131, 0, 0, 0.717131, 0.291294
+elapsed time for k point: 6 seconds.
+velocity:, 37, #(0.2688621989868842 -1.9738835815583814e-8 3.727826407459108e-9)
+solve_kpoint (0.737052,0,0):
+Solving for bands 1 to 1...
+    iteration   11: trace = 0.08797958156436636 (1.39815e-05% change)
+Finished solving for bands 1 to 1 after 12 iterations.
+freqs:, 38, 0.737052, 0, 0, 0.737052, 0.296614
+elapsed time for k point: 5 seconds.
+velocity:, 38, #(0.26541766684238405 -4.306608339640565e-8 1.8861444463050624e-9)
+solve_kpoint (0.756972,0,0):
+Solving for bands 1 to 1...
+    iteration   11: trace = 0.09112870051077672 (7.16996e-06% change)
+Finished solving for bands 1 to 1 after 11 iterations.
+freqs:, 39, 0.756972, 0, 0, 0.756972, 0.301875
+elapsed time for k point: 5 seconds.
+velocity:, 39, #(0.2630048276887028 -2.326810129012265e-8 1.0034916505644626e-9)
+solve_kpoint (0.776892,0,0):
+Solving for bands 1 to 1...
+    iteration   10: trace = 0.09430819381006326 (1.1713e-05% change)
+Finished solving for bands 1 to 1 after 11 iterations.
+freqs:, 40, 0.776892, 0, 0, 0.776892, 0.307096
+elapsed time for k point: 5 seconds.
+velocity:, 40, #(0.26128956912871326 -2.4913884586569644e-8 1.1808059941448797e-9)
+solve_kpoint (0.796813,0,0):
+Solving for bands 1 to 1...
+    iteration   10: trace = 0.09752411016432826 (6.48303e-06% change)
+Finished solving for bands 1 to 1 after 10 iterations.
+freqs:, 41, 0.796813, 0, 0, 0.796813, 0.312289
+elapsed time for k point: 5 seconds.
+velocity:, 41, #(0.2600678300808887 -2.065686435717504e-8 3.4163989663993495e-9)
+solve_kpoint (0.816733,0,0):
+Solving for bands 1 to 1...
+    iteration    9: trace = 0.100780929149477 (6.71868e-06% change)
+Finished solving for bands 1 to 1 after 9 iterations.
+freqs:, 42, 0.816733, 0, 0, 0.816733, 0.31746
+elapsed time for k point: 4 seconds.
+velocity:, 42, #(0.25921367131929424 -4.084174297924838e-8 5.869769928363172e-10)
+solve_kpoint (0.836653,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 9 iterations.
+freqs:, 43, 0.836653, 0, 0, 0.836653, 0.322618
+elapsed time for k point: 4 seconds.
+velocity:, 43, #(0.25862953936504673 -3.7528097762715534e-8 1.274799820346086e-9)
+solve_kpoint (0.856574,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 9 iterations.
+freqs:, 44, 0.856574, 0, 0, 0.856574, 0.327765
+elapsed time for k point: 5 seconds.
+velocity:, 44, #(0.25825305220489336 -3.4107666506411296e-8 1.2334785052093576e-9)
+solve_kpoint (0.876494,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 8 iterations.
+freqs:, 45, 0.876494, 0, 0, 0.876494, 0.332907
+elapsed time for k point: 4 seconds.
+velocity:, 45, #(0.25803582856373697 -1.4720059231108103e-8 1.698817841732368e-9)
+solve_kpoint (0.896414,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 8 iterations.
+freqs:, 46, 0.896414, 0, 0, 0.896414, 0.338047
+elapsed time for k point: 4 seconds.
+velocity:, 46, #(0.25794723905991335 -1.5900368095934874e-8 1.6878120988941462e-9)
+solve_kpoint (0.916335,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 7 iterations.
+freqs:, 47, 0.916335, 0, 0, 0.916335, 0.343185
+elapsed time for k point: 3 seconds.
+velocity:, 47, #(0.25796060121832165 -2.0289393771462716e-8 3.538454059241924e-9)
+solve_kpoint (0.936255,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 7 iterations.
+freqs:, 48, 0.936255, 0, 0, 0.936255, 0.348324
+elapsed time for k point: 3 seconds.
+velocity:, 48, #(0.2580495731093878 -2.0235698699800668e-8 3.2217075742398625e-9)
+solve_kpoint (0.956175,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 7 iterations.
+freqs:, 49, 0.956175, 0, 0, 0.956175, 0.353466
+elapsed time for k point: 4 seconds.
+velocity:, 49, #(0.25820087286149007 -1.947496359103764e-8 2.8485348924010335e-9)
+solve_kpoint (0.976096,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 7 iterations.
+freqs:, 50, 0.976096, 0, 0, 0.976096, 0.358611
+elapsed time for k point: 4 seconds.
+velocity:, 50, #(0.25840184751305345 -1.8621048433730672e-8 2.74508116242619e-9)
+solve_kpoint (0.996016,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 7 iterations.
+freqs:, 51, 0.996016, 0, 0, 0.996016, 0.363761
+elapsed time for k point: 3 seconds.
+velocity:, 51, #(0.25864226761097714 -1.79327468540453e-8 2.5589495889764485e-9)
+solve_kpoint (1.01594,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 7 iterations.
+freqs:, 52, 1.01594, 0, 0, 1.01594, 0.368916
+elapsed time for k point: 3 seconds.
+velocity:, 52, #(0.2589138607162292 -1.7314610947010964e-8 2.4226757468922043e-9)
+solve_kpoint (1.03586,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 7 iterations.
+freqs:, 53, 1.03586, 0, 0, 1.03586, 0.374077
+elapsed time for k point: 4 seconds.
+velocity:, 53, #(0.2592099237313953 -1.677875475197997e-8 2.2920157922510738e-9)
+solve_kpoint (1.05578,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 6 iterations.
+freqs:, 54, 1.05578, 0, 0, 1.05578, 0.379243
+elapsed time for k point: 3 seconds.
+velocity:, 54, #(0.2595240814840595 -2.028681713177434e-8 5.886909007386258e-10)
+solve_kpoint (1.0757,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 6 iterations.
+freqs:, 55, 1.0757, 0, 0, 1.0757, 0.384416
+elapsed time for k point: 3 seconds.
+velocity:, 55, #(0.2598537927628707 -2.0038886358087323e-8 5.359475995529133e-10)
+solve_kpoint (1.09562,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 6 iterations.
+freqs:, 56, 1.09562, 0, 0, 1.09562, 0.389596
+elapsed time for k point: 3 seconds.
+velocity:, 56, #(0.26019442439410057 -1.9573173461961246e-8 5.441923724509556e-10)
+solve_kpoint (1.11554,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 6 iterations.
+freqs:, 57, 1.11554, 0, 0, 1.11554, 0.394783
+elapsed time for k point: 3 seconds.
+velocity:, 57, #(0.2605429038555869 -1.9142870206361042e-8 5.481648340782038e-10)
+solve_kpoint (1.13546,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 6 iterations.
+freqs:, 58, 1.13546, 0, 0, 1.13546, 0.399976
+elapsed time for k point: 3 seconds.
+velocity:, 58, #(0.26089676460171163 -1.875256264695194e-8 5.518767934404105e-10)
+solve_kpoint (1.15538,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 6 iterations.
+freqs:, 59, 1.15538, 0, 0, 1.15538, 0.405177
+elapsed time for k point: 3 seconds.
+velocity:, 59, #(0.26125396338641 -1.839740771803757e-8 5.53143080820287e-10)
+solve_kpoint (1.1753,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 6 iterations.
+freqs:, 60, 1.1753, 0, 0, 1.1753, 0.410385
+elapsed time for k point: 3 seconds.
+velocity:, 60, #(0.26161281256855357 -1.8075504344987695e-8 5.522970982162642e-10)
+solve_kpoint (1.19522,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 6 iterations.
+freqs:, 61, 1.19522, 0, 0, 1.19522, 0.4156
+elapsed time for k point: 3 seconds.
+velocity:, 61, #(0.26197191974622147 -1.778465399538901e-8 5.496793124730894e-10)
+solve_kpoint (1.21514,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 6 iterations.
+freqs:, 62, 1.21514, 0, 0, 1.21514, 0.420822
+elapsed time for k point: 2 seconds.
+velocity:, 62, #(0.2623301374456853 -1.7522901551287614e-8 5.456004462236951e-10)
+solve_kpoint (1.23506,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 5 iterations.
+freqs:, 63, 1.23506, 0, 0, 1.23506, 0.426051
+elapsed time for k point: 2 seconds.
+velocity:, 63, #(0.26268720285534136 -1.2904168794331738e-8 1.4704928312393185e-9)
+solve_kpoint (1.25498,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 5 iterations.
+freqs:, 64, 1.25498, 0, 0, 1.25498, 0.431288
+elapsed time for k point: 2 seconds.
+velocity:, 64, #(0.2630418218045646 -9.406533067625907e-9 1.4165283002641408e-9)
+solve_kpoint (1.2749,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 5 iterations.
+freqs:, 65, 1.2749, 0, 0, 1.2749, 0.436531
+elapsed time for k point: 2 seconds.
+velocity:, 65, #(0.263392429095855 -1.1611370185259348e-8 1.3473376326308703e-9)
+solve_kpoint (1.29482,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 5 iterations.
+freqs:, 66, 1.29482, 0, 0, 1.29482, 0.441781
+elapsed time for k point: 2 seconds.
+velocity:, 66, #(0.2637391850986965 -1.0760191769674315e-8 1.1823218890242102e-9)
+solve_kpoint (1.31474,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 5 iterations.
+freqs:, 67, 1.31474, 0, 0, 1.31474, 0.447038
+elapsed time for k point: 3 seconds.
+velocity:, 67, #(0.2640818072780545 -1.1732146946620886e-8 1.2261874958121482e-9)
+solve_kpoint (1.33466,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 5 iterations.
+freqs:, 68, 1.33466, 0, 0, 1.33466, 0.452302
+elapsed time for k point: 3 seconds.
+velocity:, 68, #(0.26441992697463707 -1.1304058480469584e-8 1.0844231945510326e-9)
+solve_kpoint (1.35458,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 5 iterations.
+freqs:, 69, 1.35458, 0, 0, 1.35458, 0.457573
+elapsed time for k point: 3 seconds.
+velocity:, 69, #(0.26475324263394295 -1.198334066772068e-8 1.1336375187965212e-9)
+solve_kpoint (1.3745,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 5 iterations.
+freqs:, 70, 1.3745, 0, 0, 1.3745, 0.46285
+elapsed time for k point: 3 seconds.
+velocity:, 70, #(0.26508167408662275 -1.1688616477819984e-8 1.0088555958310428e-9)
+solve_kpoint (1.39442,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 5 iterations.
+freqs:, 71, 1.39442, 0, 0, 1.39442, 0.468134
+elapsed time for k point: 2 seconds.
+velocity:, 71, #(0.26540490315195725 -1.222609356560255e-8 1.0636287050108136e-9)
+solve_kpoint (1.41434,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 5 iterations.
+freqs:, 72, 1.41434, 0, 0, 1.41434, 0.473424
+elapsed time for k point: 2 seconds.
+velocity:, 72, #(0.2657230405204633 -1.1999289979241104e-8 9.567739234704794e-10)
+solve_kpoint (1.43426,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 4 iterations.
+freqs:, 73, 1.43426, 0, 0, 1.43426, 0.47872
+elapsed time for k point: 2 seconds.
+velocity:, 73, #(0.26603489534957103 -1.4133236349965169e-8 1.2290212379188914e-9)
+solve_kpoint (1.45418,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 5 iterations.
+freqs:, 74, 1.45418, 0, 0, 1.45418, 0.484023
+elapsed time for k point: 3 seconds.
+velocity:, 74, #(0.26634248694419005 -1.1377791421349193e-8 1.2459382037062239e-9)
+solve_kpoint (1.4741,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 4 iterations.
+freqs:, 75, 1.4741, 0, 0, 1.4741, 0.489332
+elapsed time for k point: 2 seconds.
+velocity:, 75, #(0.2666453003384003 -1.4763118037982184e-8 1.216513787278139e-9)
+solve_kpoint (1.49402,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 4 iterations.
+freqs:, 76, 1.49402, 0, 0, 1.49402, 0.494646
+elapsed time for k point: 2 seconds.
+velocity:, 76, #(0.26694208452075757 -1.7405731343512684e-8 6.731400951540771e-10)
+solve_kpoint (1.51394,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 4 iterations.
+freqs:, 77, 1.51394, 0, 0, 1.51394, 0.499967
+elapsed time for k point: 2 seconds.
+velocity:, 77, #(0.26723367424407113 -1.5902476312129982e-8 7.159881890611867e-10)
+solve_kpoint (1.53386,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 4 iterations.
+freqs:, 78, 1.53386, 0, 0, 1.53386, 0.505293
+elapsed time for k point: 2 seconds.
+velocity:, 78, #(0.2675201047667822 -1.6510159502207897e-8 6.562867016768182e-10)
+solve_kpoint (1.55378,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 4 iterations.
+freqs:, 79, 1.55378, 0, 0, 1.55378, 0.510625
+elapsed time for k point: 2 seconds.
+velocity:, 79, #(0.2678013466647356 -1.6077092598706672e-8 5.979802242128178e-10)
+solve_kpoint (1.57371,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 4 iterations.
+freqs:, 80, 1.57371, 0, 0, 1.57371, 0.515962
+elapsed time for k point: 2 seconds.
+velocity:, 80, #(0.26807745940637084 -1.6351061606519346e-8 6.820011072316604e-10)
+solve_kpoint (1.59363,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 4 iterations.
+freqs:, 81, 1.59363, 0, 0, 1.59363, 0.521305
+elapsed time for k point: 2 seconds.
+velocity:, 81, #(0.2683485258139369 -1.6369489232854052e-8 5.813336752666597e-10)
+solve_kpoint (1.61355,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 4 iterations.
+freqs:, 82, 1.61355, 0, 0, 1.61355, 0.526653
+elapsed time for k point: 2 seconds.
+velocity:, 82, #(0.26861456774424675 -1.639416648193114e-8 7.690910182186757e-10)
+solve_kpoint (1.63347,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 4 iterations.
+freqs:, 83, 1.63347, 0, 0, 1.63347, 0.532007
+elapsed time for k point: 2 seconds.
+velocity:, 83, #(0.2688756926651416 -1.66042349455701e-8 6.414110263546638e-10)
+solve_kpoint (1.65339,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 4 iterations.
+freqs:, 84, 1.65339, 0, 0, 1.65339, 0.537366
+elapsed time for k point: 1 seconds.
+velocity:, 84, #(0.26913190630529304 -1.6504515522049254e-8 8.619193369455668e-10)
+solve_kpoint (1.67331,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 4 iterations.
+freqs:, 85, 1.67331, 0, 0, 1.67331, 0.542729
+elapsed time for k point: 2 seconds.
+velocity:, 85, #(0.2693833642381522 -1.6830284539155212e-8 6.96351338417244e-10)
+solve_kpoint (1.69323,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 4 iterations.
+freqs:, 86, 1.69323, 0, 0, 1.69323, 0.548098
+elapsed time for k point: 2 seconds.
+velocity:, 86, #(0.269630102102775 -1.6750794363781132e-8 9.024332428950675e-10)
+solve_kpoint (1.71315,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 4 iterations.
+freqs:, 87, 1.71315, 0, 0, 1.71315, 0.553471
+elapsed time for k point: 2 seconds.
+velocity:, 87, #(0.269872287949683 -1.712201076004614e-8 7.183570461675535e-10)
+solve_kpoint (1.73307,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 4 iterations.
+freqs:, 88, 1.73307, 0, 0, 1.73307, 0.55885
+elapsed time for k point: 2 seconds.
+velocity:, 88, #(0.2701099511289061 -1.7080097557522032e-8 9.123675084149637e-10)
+solve_kpoint (1.75299,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 4 iterations.
+freqs:, 89, 1.75299, 0, 0, 1.75299, 0.564233
+elapsed time for k point: 2 seconds.
+velocity:, 89, #(0.27034324843089974 -1.7437737161481818e-8 7.286682427298312e-10)
+solve_kpoint (1.77291,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 4 iterations.
+freqs:, 90, 1.77291, 0, 0, 1.77291, 0.56962
+elapsed time for k point: 2 seconds.
+velocity:, 90, #(0.270572209326803 -1.7438028094944088e-8 9.12230755345535e-10)
+solve_kpoint (1.79283,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 4 iterations.
+freqs:, 91, 1.79283, 0, 0, 1.79283, 0.575012
+elapsed time for k point: 2 seconds.
+velocity:, 91, #(0.27079698515532846 -1.776618554112581e-8 7.363515341645519e-10)
+solve_kpoint (1.81275,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 4 iterations.
+freqs:, 92, 1.81275, 0, 0, 1.81275, 0.580409
+elapsed time for k point: 3 seconds.
+velocity:, 92, #(0.2710176087931342 -1.781302424454342e-8 9.070440921727909e-10)
+solve_kpoint (1.83267,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 4 iterations.
+freqs:, 93, 1.83267, 0, 0, 1.83267, 0.58581
+elapsed time for k point: 2 seconds.
+velocity:, 93, #(0.27123422532787306 -1.8110284676313486e-8 7.430472538483709e-10)
+solve_kpoint (1.85259,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 4 iterations.
+freqs:, 94, 1.85259, 0, 0, 1.85259, 0.591215
+elapsed time for k point: 2 seconds.
+velocity:, 94, #(0.2714468706224701 -1.8202200504881434e-8 8.978787652951644e-10)
+solve_kpoint (1.87251,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 4 iterations.
+freqs:, 95, 1.87251, 0, 0, 1.87251, 0.596625
+elapsed time for k point: 2 seconds.
+velocity:, 95, #(0.27165568224217995 -1.847249114831492e-8 7.488483815260188e-10)
+solve_kpoint (1.89243,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 4 iterations.
+freqs:, 96, 1.89243, 0, 0, 1.89243, 0.602038
+elapsed time for k point: 2 seconds.
+velocity:, 96, #(0.27186069882356423 -1.8604416669071983e-8 8.851928851102743e-10)
+solve_kpoint (1.91235,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 4 iterations.
+freqs:, 97, 1.91235, 0, 0, 1.91235, 0.607456
+elapsed time for k point: 3 seconds.
+velocity:, 97, #(0.27206204942789086 -1.8854098551086904e-8 7.534848158870694e-10)
+solve_kpoint (1.93227,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 4 iterations.
+freqs:, 98, 1.93227, 0, 0, 1.93227, 0.612877
+elapsed time for k point: 2 seconds.
+velocity:, 98, #(0.2722597754753857 -1.9019364975243533e-8 8.694917804678788e-10)
+solve_kpoint (1.95219,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 4 iterations.
+freqs:, 99, 1.95219, 0, 0, 1.95219, 0.618303
+elapsed time for k point: 2 seconds.
+velocity:, 99, #(0.2724539968083649 -1.9255570032591706e-8 7.565531479535106e-10)
+solve_kpoint (1.97211,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 4 iterations.
+freqs:, 100, 1.97211, 0, 0, 1.97211, 0.623732
+elapsed time for k point: 3 seconds.
+velocity:, 100, #(0.27264475768749635 -1.944725757166511e-8 8.514306362957314e-10)
+solve_kpoint (1.99203,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 4 iterations.
+freqs:, 101, 1.99203, 0, 0, 1.99203, 0.629165
+elapsed time for k point: 2 seconds.
+velocity:, 101, #(0.2728321683457104 -1.967676202777415e-8 7.576082764686182e-10)
+solve_kpoint (2.01195,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 4 iterations.
+freqs:, 102, 2.01195, 0, 0, 2.01195, 0.634602
+elapsed time for k point: 2 seconds.
+velocity:, 102, #(0.2730162758332318 -1.988863578450903e-8 8.317551525746436e-10)
+solve_kpoint (2.03187,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 4 iterations.
+freqs:, 103, 2.03187, 0, 0, 2.03187, 0.640042
+elapsed time for k point: 3 seconds.
+velocity:, 103, #(0.273197180758353 -2.0117148950549438e-8 7.562513107546078e-10)
+solve_kpoint (2.05179,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 4 iterations.
+freqs:, 104, 2.05179, 0, 0, 2.05179, 0.645486
+elapsed time for k point: 2 seconds.
+velocity:, 104, #(0.2733749327037116 -2.0344190357717546e-8 8.111944350077881e-10)
+solve_kpoint (2.07171,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 4 iterations.
+freqs:, 105, 2.07171, 0, 0, 2.07171, 0.650933
+elapsed time for k point: 2 seconds.
+velocity:, 105, #(0.2735496230158335 -2.0576006267618022e-8 7.522119852811562e-10)
+solve_kpoint (2.09163,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 4 iterations.
+freqs:, 106, 2.09163, 0, 0, 2.09163, 0.656384
+elapsed time for k point: 3 seconds.
+velocity:, 106, #(0.27372130332204825 -2.081458284868993e-8 7.903593000105098e-10)
+solve_kpoint (2.11155,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 4 iterations.
+freqs:, 107, 2.11155, 0, 0, 2.11155, 0.661839
+elapsed time for k point: 3 seconds.
+velocity:, 107, #(0.27389005639266367 -2.105254707399153e-8 7.454053126999572e-10)
+solve_kpoint (2.13147,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 4 iterations.
+freqs:, 108, 2.13147, 0, 0, 2.13147, 0.667296
+elapsed time for k point: 3 seconds.
+velocity:, 108, #(0.2740559352251922 -2.130032780631163e-8 7.696792287878935e-10)
+solve_kpoint (2.15139,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 4 iterations.
+freqs:, 109, 2.15139, 0, 0, 2.15139, 0.672757
+elapsed time for k point: 3 seconds.
+velocity:, 109, #(0.2742190149198567 -2.1546044274488144e-8 7.359454106402589e-10)
+solve_kpoint (2.17131,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 4 iterations.
+freqs:, 110, 2.17131, 0, 0, 2.17131, 0.678221
+elapsed time for k point: 2 seconds.
+velocity:, 110, #(0.2743793490713104 -2.1801718259302635e-8 7.493896758044524e-10)
+solve_kpoint (2.19124,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 4 iterations.
+freqs:, 111, 2.19124, 0, 0, 2.19124, 0.683689
+elapsed time for k point: 2 seconds.
+velocity:, 111, #(0.27453700611351856 -2.2055859721663466e-8 7.241148891031669e-10)
+solve_kpoint (2.21116,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 4 iterations.
+freqs:, 112, 2.21116, 0, 0, 2.21116, 0.689159
+elapsed time for k point: 3 seconds.
+velocity:, 112, #(0.27469203946802057 -2.23188014238952e-8 7.295634476495055e-10)
+solve_kpoint (2.23108,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 4 iterations.
+freqs:, 113, 2.23108, 0, 0, 2.23108, 0.694632
+elapsed time for k point: 2 seconds.
+velocity:, 113, #(0.2748445118897134 -2.2581458539130177e-8 7.103066093140622e-10)
+solve_kpoint (2.251,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 4 iterations.
+freqs:, 114, 2.251, 0, 0, 2.251, 0.700109
+elapsed time for k point: 2 seconds.
+velocity:, 114, #(0.27499447594476384 -2.2851420729887426e-8 7.101658826920595e-10)
+solve_kpoint (2.27092,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 4 iterations.
+freqs:, 115, 2.27092, 0, 0, 2.27092, 0.705588
+elapsed time for k point: 3 seconds.
+velocity:, 115, #(0.2751419895960917 -2.3122353110724356e-8 6.949560327366956e-10)
+solve_kpoint (2.29084,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 4 iterations.
+freqs:, 116, 2.29084, 0, 0, 2.29084, 0.711071
+elapsed time for k point: 2 seconds.
+velocity:, 116, #(0.2752871040133849 -2.339925480394258e-8 6.911144706674282e-10)
+solve_kpoint (2.31076,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 4 iterations.
+freqs:, 117, 2.31076, 0, 0, 2.31076, 0.716556
+elapsed time for k point: 2 seconds.
+velocity:, 117, #(0.2754298731097599 -2.367809925905138e-8 6.784850990050343e-10)
+solve_kpoint (2.33068,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 4 iterations.
+freqs:, 118, 2.33068, 0, 0, 2.33068, 0.722044
+elapsed time for k point: 2 seconds.
+velocity:, 118, #(0.2755703462763511 -2.3961883295603757e-8 6.723239525350525e-10)
+solve_kpoint (2.3506,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 4 iterations.
+freqs:, 119, 2.3506, 0, 0, 2.3506, 0.727535
+elapsed time for k point: 3 seconds.
+velocity:, 119, #(0.27570857396410337 -2.4248231771465443e-8 6.612643973923848e-10)
+solve_kpoint (2.37052,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 4 iterations.
+freqs:, 120, 2.37052, 0, 0, 2.37052, 0.733028
+elapsed time for k point: 2 seconds.
+velocity:, 120, #(0.27584460355217577 -2.4538799486328676e-8 6.537340803631644e-10)
+solve_kpoint (2.39044,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 4 iterations.
+freqs:, 121, 2.39044, 0, 0, 2.39044, 0.738525
+elapsed time for k point: 2 seconds.
+velocity:, 121, #(0.2759784824778402 -2.4832268616304712e-8 6.435977232222167e-10)
+solve_kpoint (2.41036,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 4 iterations.
+freqs:, 122, 2.41036, 0, 0, 2.41036, 0.744023
+elapsed time for k point: 3 seconds.
+velocity:, 122, #(0.27611025599666994 -2.5129467946211568e-8 6.353175921298217e-10)
+solve_kpoint (2.43028,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 4 iterations.
+freqs:, 123, 2.43028, 0, 0, 2.43028, 0.749525
+elapsed time for k point: 2 seconds.
+velocity:, 123, #(0.27623996886856655 -2.5429689939905842e-8 6.257219060685351e-10)
+solve_kpoint (2.4502,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 4 iterations.
+freqs:, 124, 2.4502, 0, 0, 2.4502, 0.755029
+elapsed time for k point: 2 seconds.
+velocity:, 124, #(0.2763676642032625 -2.573330880976266e-8 6.1707840204712e-10)
+solve_kpoint (2.47012,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 4 iterations.
+freqs:, 125, 2.47012, 0, 0, 2.47012, 0.760536
+elapsed time for k point: 2 seconds.
+velocity:, 125, #(0.27649338433732196 -2.6039943914262953e-8 6.078154838157885e-10)
+solve_kpoint (2.49004,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 4 iterations.
+freqs:, 126, 2.49004, 0, 0, 2.49004, 0.766045
+elapsed time for k point: 2 seconds.
+velocity:, 126, #(0.27661717027168653 -2.6349727672399758e-8 5.990420533247674e-10)
+solve_kpoint (2.50996,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 4 iterations.
+freqs:, 127, 2.50996, 0, 0, 2.50996, 0.771556
+elapsed time for k point: 3 seconds.
+velocity:, 127, #(0.27673906211657834 -2.6662446281560178e-8 5.90011501567952e-10)
+solve_kpoint (2.52988,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 4 iterations.
+freqs:, 128, 2.52988, 0, 0, 2.52988, 0.77707
+elapsed time for k point: 2 seconds.
+velocity:, 128, #(0.2768590988367197 -2.6978107300869646e-8 5.81246860513843e-10)
+solve_kpoint (2.5498,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 4 iterations.
+freqs:, 129, 2.5498, 0, 0, 2.5498, 0.782586
+elapsed time for k point: 2 seconds.
+velocity:, 129, #(0.2769773184755159 -2.7296580796866565e-8 5.724086431768124e-10)
+solve_kpoint (2.56972,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 4 iterations.
+freqs:, 130, 2.56972, 0, 0, 2.56972, 0.788105
+elapsed time for k point: 3 seconds.
+velocity:, 130, #(0.2770937580525139 -2.761782417075684e-8 5.637356748604425e-10)
+solve_kpoint (2.58964,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 4 iterations.
+freqs:, 131, 2.58964, 0, 0, 2.58964, 0.793626
+elapsed time for k point: 2 seconds.
+velocity:, 131, #(0.2772084536795275 -2.794172981174877e-8 5.550807758411438e-10)
+solve_kpoint (2.60956,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 4 iterations.
+freqs:, 132, 2.60956, 0, 0, 2.60956, 0.799149
+elapsed time for k point: 2 seconds.
+velocity:, 132, #(0.277321440529683 -2.826823074677877e-8 5.46550426951203e-10)
+solve_kpoint (2.62948,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 4 iterations.
+freqs:, 133, 2.62948, 0, 0, 2.62948, 0.804675
+elapsed time for k point: 3 seconds.
+velocity:, 133, #(0.27743275290229136 -2.859723825937635e-8 5.380841905370248e-10)
+solve_kpoint (2.6494,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 4 iterations.
+freqs:, 134, 2.6494, 0, 0, 2.6494, 0.810202
+elapsed time for k point: 2 seconds.
+velocity:, 134, #(0.27754242422393194 -2.892867560838825e-8 5.297290871291342e-10)
+solve_kpoint (2.66932,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 4 iterations.
+freqs:, 135, 2.66932, 0, 0, 2.66932, 0.815732
+elapsed time for k point: 2 seconds.
+velocity:, 135, #(0.27765048708951645 -2.926245268762327e-8 5.214620823108439e-10)
+solve_kpoint (2.68924,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 4 iterations.
+freqs:, 136, 2.68924, 0, 0, 2.68924, 0.821264
+elapsed time for k point: 2 seconds.
+velocity:, 136, #(0.27775697327656224 -2.9598493654537642e-8 5.133039873988754e-10)
+solve_kpoint (2.70916,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 4 iterations.
+freqs:, 137, 2.70916, 0, 0, 2.70916, 0.826798
+elapsed time for k point: 1 seconds.
+velocity:, 137, #(0.2778619137752341 -2.993671287413354e-8 5.052473439817366e-10)
+solve_kpoint (2.72908,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 4 iterations.
+freqs:, 138, 2.72908, 0, 0, 2.72908, 0.832334
+elapsed time for k point: 2 seconds.
+velocity:, 138, #(0.27796533880731966 -3.0277022481378135e-8 4.973015063509842e-10)
+solve_kpoint (2.749,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 4 iterations.
+freqs:, 139, 2.749, 0, 0, 2.749, 0.837872
+elapsed time for k point: 2 seconds.
+velocity:, 139, #(0.2780672778510819 -3.061934061375979e-8 4.89464974633845e-10)
+solve_kpoint (2.76892,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 4 iterations.
+freqs:, 140, 2.76892, 0, 0, 2.76892, 0.843413
+elapsed time for k point: 2 seconds.
+velocity:, 140, #(0.2781677596611559 -3.0963585604433965e-8 4.817422658988092e-10)
+solve_kpoint (2.78884,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 4 iterations.
+freqs:, 141, 2.78884, 0, 0, 2.78884, 0.848955
+elapsed time for k point: 2 seconds.
+velocity:, 141, #(0.27826681229060585 -3.1309667116965314e-8 4.74133715874014e-10)
+solve_kpoint (2.80876,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 4 iterations.
+freqs:, 142, 2.80876, 0, 0, 2.80876, 0.854499
+elapsed time for k point: 2 seconds.
+velocity:, 142, #(0.27836446311055535 -3.1657507560168137e-8 4.666415696123717e-10)
+solve_kpoint (2.82869,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 4 iterations.
+freqs:, 143, 2.82869, 0, 0, 2.82869, 0.860045
+elapsed time for k point: 3 seconds.
+velocity:, 143, #(0.2784607388301535 -3.200701386685094e-8 4.592666333436427e-10)
+solve_kpoint (2.84861,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 4 iterations.
+freqs:, 144, 2.84861, 0, 0, 2.84861, 0.865593
+elapsed time for k point: 2 seconds.
+velocity:, 144, #(0.2785556655154695 -3.235810870181564e-8 4.520101174236116e-10)
+solve_kpoint (2.86853,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 4 iterations.
+freqs:, 145, 2.86853, 0, 0, 2.86853, 0.871143
+elapsed time for k point: 3 seconds.
+velocity:, 145, #(0.27864926860807465 -3.27107074687713e-8 4.4487249859235377e-10)
+solve_kpoint (2.88845,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 4 iterations.
+freqs:, 146, 2.88845, 0, 0, 2.88845, 0.876695
+elapsed time for k point: 2 seconds.
+velocity:, 146, #(0.2787415729427884 -3.3064718273356645e-8 4.3785440312086136e-10)
+solve_kpoint (2.90837,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 4 iterations.
+freqs:, 147, 2.90837, 0, 0, 2.90837, 0.882248
+elapsed time for k point: 2 seconds.
+velocity:, 147, #(0.27883260276501204 -3.342006057145824e-8 4.309559892012084e-10)
+solve_kpoint (2.92829,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 4 iterations.
+freqs:, 148, 2.92829, 0, 0, 2.92829, 0.887803
+elapsed time for k point: 2 seconds.
+velocity:, 148, #(0.27892238174752637 -3.377665764893803e-8 4.241775568316045e-10)
+solve_kpoint (2.94821,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 4 iterations.
+freqs:, 149, 2.94821, 0, 0, 2.94821, 0.893361
+elapsed time for k point: 2 seconds.
+velocity:, 149, #(0.27901093300666246 -3.4134413090881436e-8 4.175187871316202e-10)
+solve_kpoint (2.96813,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 4 iterations.
+freqs:, 150, 2.96813, 0, 0, 2.96813, 0.898919
+elapsed time for k point: 3 seconds.
+velocity:, 150, #(0.2790982791179983 -3.449324717389748e-8 4.109796408321737e-10)
+solve_kpoint (2.98805,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 4 iterations.
+freqs:, 151, 2.98805, 0, 0, 2.98805, 0.90448
+elapsed time for k point: 3 seconds.
+velocity:, 151, #(0.27918444213169796 -3.48530828742443e-8 4.045596535389616e-10)
+solve_kpoint (3.00797,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 4 iterations.
+freqs:, 152, 3.00797, 0, 0, 3.00797, 0.910042
+elapsed time for k point: 2 seconds.
+velocity:, 152, #(0.2792694435870221 -3.521382991863131e-8 3.9825835322711004e-10)
+solve_kpoint (3.02789,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 4 iterations.
+freqs:, 153, 3.02789, 0, 0, 3.02789, 0.915606
+elapsed time for k point: 2 seconds.
+velocity:, 153, #(0.2793533045267832 -3.5575404205957645e-8 3.9207516014768043e-10)
+solve_kpoint (3.04781,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 4 iterations.
+freqs:, 154, 3.04781, 0, 0, 3.04781, 0.921172
+elapsed time for k point: 2 seconds.
+velocity:, 154, #(0.27943604551109485 -3.59377252132585e-8 3.860092361577994e-10)
+solve_kpoint (3.06773,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 4 iterations.
+freqs:, 155, 3.06773, 0, 0, 3.06773, 0.926739
+elapsed time for k point: 2 seconds.
+velocity:, 155, #(0.2795176866306606 -3.6300712827419584e-8 3.8005992529726344e-10)
+solve_kpoint (3.08765,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 4 iterations.
+freqs:, 156, 3.08765, 0, 0, 3.08765, 0.932308
+elapsed time for k point: 2 seconds.
+velocity:, 156, #(0.2795982475198246 -3.666427779553069e-8 3.7422614404823766e-10)
+solve_kpoint (3.10757,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 4 iterations.
+freqs:, 157, 3.10757, 0, 0, 3.10757, 0.937878
+elapsed time for k point: 2 seconds.
+velocity:, 157, #(0.2796777473691087 -3.702834573687724e-8 3.685069983029509e-10)
+solve_kpoint (3.12749,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 4 iterations.
+freqs:, 158, 3.12749, 0, 0, 3.12749, 0.943451
+elapsed time for k point: 3 seconds.
+velocity:, 158, #(0.27975620493721326 -3.739283071134241e-8 3.629014065533152e-10)
+solve_kpoint (3.14741,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 4 iterations.
+freqs:, 159, 3.14741, 0, 0, 3.14741, 0.949024
+elapsed time for k point: 3 seconds.
+velocity:, 159, #(0.2798336385630286 -3.775765044666704e-8 3.5740829239389987e-10)
+solve_kpoint (3.16733,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 4 iterations.
+freqs:, 160, 3.16733, 0, 0, 3.16733, 0.954599
+elapsed time for k point: 4 seconds.
+velocity:, 160, #(0.2799100661768137 -3.812272732513867e-8 3.520264154943669e-10)
+solve_kpoint (3.18725,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 4 iterations.
+freqs:, 161, 3.18725, 0, 0, 3.18725, 0.960176
+elapsed time for k point: 2 seconds.
+velocity:, 161, #(0.2799855053113195 -3.848797661566965e-8 3.467544819182875e-10)
+solve_kpoint (3.20717,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 4 iterations.
+freqs:, 162, 3.20717, 0, 0, 3.20717, 0.965754
+elapsed time for k point: 2 seconds.
+velocity:, 162, #(0.28005997311244957 -3.885332171276043e-8 3.4159137921874844e-10)
+solve_kpoint (3.22709,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 4 iterations.
+freqs:, 163, 3.22709, 0, 0, 3.22709, 0.971334
+elapsed time for k point: 2 seconds.
+velocity:, 163, #(0.28013348634963375 -3.9218679911332094e-8 3.365356716111026e-10)
+solve_kpoint (3.24701,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 4 iterations.
+freqs:, 164, 3.24701, 0, 0, 3.24701, 0.976915
+elapsed time for k point: 3 seconds.
+velocity:, 164, #(0.28020606142590565 -3.95839746930162e-8 3.3158608323329247e-10)
+solve_kpoint (3.26693,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 4 iterations.
+freqs:, 165, 3.26693, 0, 0, 3.26693, 0.982497
+elapsed time for k point: 3 seconds.
+velocity:, 165, #(0.28027771438755883 -3.994912560237543e-8 3.267411695643418e-10)
+solve_kpoint (3.28685,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 4 iterations.
+freqs:, 166, 3.28685, 0, 0, 3.28685, 0.988081
+elapsed time for k point: 2 seconds.
+velocity:, 166, #(0.28034846093359606 -4.0314051265919395e-8 3.2199964704105565e-10)
+solve_kpoint (3.30677,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 4 iterations.
+freqs:, 167, 3.30677, 0, 0, 3.30677, 0.993667
+elapsed time for k point: 2 seconds.
+velocity:, 167, #(0.2804183164248444 -4.067867909389559e-8 3.173600109369208e-10)
+solve_kpoint (3.32669,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 4 iterations.
+freqs:, 168, 3.32669, 0, 0, 3.32669, 0.999253
+elapsed time for k point: 3 seconds.
+velocity:, 168, #(0.2804872958928843 -4.104292656041026e-8 3.128209001436575e-10)
+solve_kpoint (3.34661,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 4 iterations.
+freqs:, 169, 3.34661, 0, 0, 3.34661, 1.00484
+elapsed time for k point: 3 seconds.
+velocity:, 169, #(0.2805554140485083 -4.1406719675545616e-8 3.0838074398776387e-10)
+solve_kpoint (3.36653,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 4 iterations.
+freqs:, 170, 3.36653, 0, 0, 3.36653, 1.01043
+elapsed time for k point: 3 seconds.
+velocity:, 170, #(0.2806226852901501 -4.176997648674966e-8 3.040382032848415e-10)
+solve_kpoint (3.38645,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 3 iterations.
+freqs:, 171, 3.38645, 0, 0, 3.38645, 1.01602
+elapsed time for k point: 4 seconds.
+velocity:, 171, #(0.2806895690711678 -4.1179076323708105e-8 -5.895968684849815e-11)
+solve_kpoint (3.40637,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 4 iterations.
+freqs:, 172, 3.40637, 0, 0, 3.40637, 1.02161
+elapsed time for k point: 4 seconds.
+velocity:, 172, #(0.2807546383785707 -4.187555883574208e-8 4.282514487394844e-11)
+solve_kpoint (3.42629,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 3 iterations.
+freqs:, 173, 3.42629, 0, 0, 3.42629, 1.02721
+elapsed time for k point: 3 seconds.
+velocity:, 173, #(0.2808198719839906 -4.272786166738479e-8 3.4346321013422443e-10)
+solve_kpoint (3.44622,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 4 iterations.
+freqs:, 174, 3.44622, 0, 0, 3.44622, 1.0328
+elapsed time for k point: 4 seconds.
+velocity:, 174, #(0.2808834623685956 -4.302088577243541e-8 2.658555397697243e-10)
+solve_kpoint (3.46614,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 2 iterations.
+freqs:, 175, 3.46614, 0, 0, 3.46614, 1.0384
+elapsed time for k point: 2 seconds.
+velocity:, 175, #(0.2809520685338217 -4.387406472835658e-8 4.096172136032622e-10)
+solve_kpoint (3.48606,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 4 iterations.
+freqs:, 176, 3.48606, 0, 0, 3.48606, 1.04399
+elapsed time for k point: 4 seconds.
+velocity:, 176, #(0.2810095930555614 -4.3586776558809195e-8 2.3674151052103973e-10)
+solve_kpoint (3.50598,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 2 iterations.
+freqs:, 177, 3.50598, 0, 0, 3.50598, 1.04959
+elapsed time for k point: 2 seconds.
+velocity:, 177, #(0.2810762654132246 -4.429090247291126e-8 3.376453834451121e-10)
+solve_kpoint (3.5259,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 4 iterations.
+freqs:, 178, 3.5259, 0, 0, 3.5259, 1.05519
+elapsed time for k point: 3 seconds.
+velocity:, 178, #(0.2811322581595844 -4.426303895795433e-8 2.431777951285705e-10)
+solve_kpoint (3.54582,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 2 iterations.
+freqs:, 179, 3.54582, 0, 0, 3.54582, 1.06079
+elapsed time for k point: 2 seconds.
+velocity:, 179, #(0.28119741796026587 -4.50079298010742e-8 3.531340806088564e-10)
+solve_kpoint (3.56574,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 4 iterations.
+freqs:, 180, 3.56574, 0, 0, 3.56574, 1.0664
+elapsed time for k point: 4 seconds.
+velocity:, 180, #(0.28125204098226936 -4.4872617320964634e-8 2.292723850569928e-10)
+solve_kpoint (3.58566,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 2 iterations.
+freqs:, 181, 3.58566, 0, 0, 3.58566, 1.072
+elapsed time for k point: 2 seconds.
+velocity:, 181, #(0.28131561227495894 -4.557760381375133e-8 3.246381851642657e-10)
+solve_kpoint (3.60558,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 4 iterations.
+freqs:, 182, 3.60558, 0, 0, 3.60558, 1.0776
+elapsed time for k point: 3 seconds.
+velocity:, 182, #(0.28136898523268283 -4.553858301924575e-8 2.2786098456378684e-10)
+solve_kpoint (3.6255,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 2 iterations.
+freqs:, 183, 3.6255, 0, 0, 3.6255, 1.08321
+elapsed time for k point: 2 seconds.
+velocity:, 183, #(0.28143108216523705 -4.6236041600567953e-8 3.2020537116955323e-10)
+solve_kpoint (3.64542,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 4 iterations.
+freqs:, 184, 3.64542, 0, 0, 3.64542, 1.08882
+elapsed time for k point: 3 seconds.
+velocity:, 184, #(0.2814832008536709 -4.6189789169125375e-8 2.2108938433572758e-10)
+solve_kpoint (3.66534,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 2 iterations.
+freqs:, 185, 3.66534, 0, 0, 3.66534, 1.09442
+elapsed time for k point: 1 seconds.
+velocity:, 185, #(0.28154383035556785 -4.686044086554949e-8 3.0548861366190625e-10)
+solve_kpoint (3.68526,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 4 iterations.
+freqs:, 186, 3.68526, 0, 0, 3.68526, 1.10003
+elapsed time for k point: 3 seconds.
+velocity:, 186, #(0.2815947572756665 -4.685418787212462e-8 2.1748627692001097e-10)
+solve_kpoint (3.70518,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 2 iterations.
+freqs:, 187, 3.70518, 0, 0, 3.70518, 1.10564
+elapsed time for k point: 2 seconds.
+velocity:, 187, #(0.28165398388542345 -4.750588440456555e-8 2.9684088451112984e-10)
+solve_kpoint (3.7251,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 4 iterations.
+freqs:, 188, 3.7251, 0, 0, 3.7251, 1.11125
+elapsed time for k point: 3 seconds.
+velocity:, 188, #(0.28170374441049545 -4.751260083899788e-8 2.127973451327831e-10)
+solve_kpoint (3.74502,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 2 iterations.
+freqs:, 189, 3.74502, 0, 0, 3.74502, 1.11687
+elapsed time for k point: 1 seconds.
+velocity:, 189, #(0.2817616010117387 -4.814124721041523e-8 2.8611818194716434e-10)
+solve_kpoint (3.76494,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 4 iterations.
+freqs:, 190, 3.76494, 0, 0, 3.76494, 1.12248
+elapsed time for k point: 2 seconds.
+velocity:, 190, #(0.28181023675239636 -4.8170236964140476e-8 2.0901531516258373e-10)
+solve_kpoint (3.78486,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 2 iterations.
+freqs:, 191, 3.78486, 0, 0, 3.78486, 1.12809
+elapsed time for k point: 1 seconds.
+velocity:, 191, #(0.28186676982896947 -4.877801992894391e-8 2.7712855846864674e-10)
+solve_kpoint (3.80478,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 4 iterations.
+freqs:, 192, 3.80478, 0, 0, 3.80478, 1.13371
+elapsed time for k point: 2 seconds.
+velocity:, 192, #(0.2819143122073587 -4.882165412841271e-8 2.0515754785928942e-10)
+solve_kpoint (3.8247,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 2 iterations.
+freqs:, 193, 3.8247, 0, 0, 3.8247, 1.13932
+elapsed time for k point: 1 seconds.
+velocity:, 193, #(0.2819695591730972 -4.940806109520808e-8 2.6797953962900754e-10)
+solve_kpoint (3.84462,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 4 iterations.
+freqs:, 194, 3.84462, 0, 0, 3.84462, 1.14494
+elapsed time for k point: 3 seconds.
+velocity:, 194, #(0.28201604257974544 -4.946720641569484e-8 2.016726509134857e-10)
+solve_kpoint (3.86454,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 2 iterations.
+freqs:, 195, 3.86454, 0, 0, 3.86454, 1.15056
+elapsed time for k point: 1 seconds.
+velocity:, 195, #(0.2820700430870724 -5.0033144492099575e-8 2.5953104603491057e-10)
+solve_kpoint (3.88446,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 4 iterations.
+freqs:, 196, 3.88446, 0, 0, 3.88446, 1.15618
+elapsed time for k point: 3 seconds.
+velocity:, 196, #(0.2821154985489463 -5.0104985354942793e-8 1.9833494775322128e-10)
+solve_kpoint (3.90438,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 2 iterations.
+freqs:, 197, 3.90438, 0, 0, 3.90438, 1.1618
+elapsed time for k point: 2 seconds.
+velocity:, 197, #(0.2821682890034031 -5.0650764753932584e-8 2.51345393405515e-10)
+solve_kpoint (3.9243,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 4 iterations.
+freqs:, 198, 3.9243, 0, 0, 3.9243, 1.16742
+elapsed time for k point: 2 seconds.
+velocity:, 198, #(0.2822127473586705 -5.073448535575618e-8 1.9523874699163498e-10)
+solve_kpoint (3.94422,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 2 iterations.
+freqs:, 199, 3.94422, 0, 0, 3.94422, 1.17304
+elapsed time for k point: 1 seconds.
+velocity:, 199, #(0.28226436369537283 -5.126070992399443e-8 2.4360392695576276e-10)
+solve_kpoint (3.96414,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 4 iterations.
+freqs:, 200, 3.96414, 0, 0, 3.96414, 1.17867
+elapsed time for k point: 2 seconds.
+velocity:, 200, #(0.2823078541435543 -5.1354763070245686e-8 1.9232963401639188e-10)
+solve_kpoint (3.98406,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 2 iterations.
+freqs:, 201, 3.98406, 0, 0, 3.98406, 1.18429
+elapsed time for k point: 2 seconds.
+velocity:, 201, #(0.28235833056497417 -5.1861905861734174e-8 2.362004838232179e-10)
+solve_kpoint (4.00398,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 4 iterations.
+freqs:, 202, 4.00398, 0, 0, 4.00398, 1.18992
+elapsed time for k point: 3 seconds.
+velocity:, 202, #(0.2824008814445386 -5.1965238576907806e-8 1.896229772874928e-10)
+solve_kpoint (4.0239,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 2 iterations.
+freqs:, 203, 4.0239, 0, 0, 4.0239, 1.19554
+elapsed time for k point: 2 seconds.
+velocity:, 203, #(0.2824502511159234 -5.2453816567354634e-8 2.2916469911598028e-10)
+solve_kpoint (4.04382,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 4 iterations.
+freqs:, 204, 4.04382, 0, 0, 4.04382, 1.20117
+elapsed time for k point: 2 seconds.
+velocity:, 204, #(0.2824918896086937 -5.25652813791115e-8 1.871024503073571e-10)
+solve_kpoint (4.06375,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 2 iterations.
+freqs:, 205, 4.06375, 0, 0, 4.06375, 1.2068
+elapsed time for k point: 2 seconds.
+velocity:, 205, #(0.2825401844047137 -5.3035763054232085e-8 2.224644904931245e-10)
+solve_kpoint (4.08367,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 4 iterations.
+freqs:, 206, 4.08367, 0, 0, 4.08367, 1.21242
+elapsed time for k point: 4 seconds.
+velocity:, 206, #(0.2825809367469922 -5.3154355947219585e-8 1.8476636819262903e-10)
+solve_kpoint (4.10359,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 2 iterations.
+freqs:, 207, 4.10359, 0, 0, 4.10359, 1.21805
+elapsed time for k point: 3 seconds.
+velocity:, 207, #(0.28262818744963014 -5.360720799449746e-8 2.1609687619973622e-10)
+solve_kpoint (4.12351,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 3 iterations.
+freqs:, 208, 4.12351, 0, 0, 4.12351, 1.22368
+elapsed time for k point: 3 seconds.
+velocity:, 208, #(0.2826683833496182 -5.2741743487265084e-8 -2.8244002680194536e-10)
+solve_kpoint (4.14343,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 3 iterations.
+freqs:, 209, 4.14343, 0, 0, 4.14343, 1.22932
+elapsed time for k point: 3 seconds.
+velocity:, 209, #(0.2827115670138953 -5.414537353564292e-8 2.854627038737818e-10)
+solve_kpoint (4.16335,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 3 iterations.
+freqs:, 210, 4.16335, 0, 0, 4.16335, 1.23495
+elapsed time for k point: 3 seconds.
+velocity:, 210, #(0.2827538813654322 -5.346564046373749e-8 -2.9923373838791683e-10)
+solve_kpoint (4.18327,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 3 iterations.
+freqs:, 211, 4.18327, 0, 0, 4.18327, 1.24058
+elapsed time for k point: 3 seconds.
+velocity:, 211, #(0.28279594790933166 -5.4790116970749435e-8 2.790479070261872e-10)
+solve_kpoint (4.20319,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 3 iterations.
+freqs:, 212, 4.20319, 0, 0, 4.20319, 1.24622
+elapsed time for k point: 2 seconds.
+velocity:, 212, #(0.2828373722621229 -5.4147316045205894e-8 -2.9596465262078163e-10)
+solve_kpoint (4.22311,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 3 iterations.
+freqs:, 213, 4.22311, 0, 0, 4.22311, 1.25185
+elapsed time for k point: 2 seconds.
+velocity:, 213, #(0.28287851948148207 -5.54035887366941e-8 2.7698532525030573e-10)
+solve_kpoint (4.24303,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 3 iterations.
+freqs:, 214, 4.24303, 0, 0, 4.24303, 1.25749
+elapsed time for k point: 2 seconds.
+velocity:, 214, #(0.2829191152632899 -5.47780361949773e-8 -2.860447444607765e-10)
+solve_kpoint (4.26295,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 3 iterations.
+freqs:, 215, 4.26295, 0, 0, 4.26295, 1.26312
+elapsed time for k point: 2 seconds.
+velocity:, 215, #(0.2829593766080091 -5.596897052582081e-8 2.765289736226226e-10)
+solve_kpoint (4.28287,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 3 iterations.
+freqs:, 216, 4.28287, 0, 0, 4.28287, 1.26876
+elapsed time for k point: 2 seconds.
+velocity:, 216, #(0.28299915613041016 -5.536161431644076e-8 -2.7303078397213195e-10)
+solve_kpoint (4.30279,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 3 iterations.
+freqs:, 217, 4.30279, 0, 0, 4.30279, 1.2744
+elapsed time for k point: 3 seconds.
+velocity:, 217, #(0.2830385664277007 -5.649411257090941e-8 2.763072432331597e-10)
+solve_kpoint (4.32271,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 3 iterations.
+freqs:, 218, 4.32271, 0, 0, 4.32271, 1.28003
+elapsed time for k point: 2 seconds.
+velocity:, 218, #(0.28307754290068843 -5.5907505679858215e-8 -2.5940747708679006e-10)
+solve_kpoint (4.34263,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 3 iterations.
+freqs:, 219, 4.34263, 0, 0, 4.34263, 1.28567
+elapsed time for k point: 2 seconds.
+velocity:, 219, #(0.28311613138832703 -5.6988030969535885e-8 2.7559377092859504e-10)
+solve_kpoint (4.36255,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 3 iterations.
+freqs:, 220, 4.36255, 0, 0, 4.36255, 1.29131
+elapsed time for k point: 2 seconds.
+velocity:, 220, #(0.2831543207554359 -5.6423614636325705e-8 -2.462566156486678e-10)
+solve_kpoint (4.38247,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 3 iterations.
+freqs:, 221, 4.38247, 0, 0, 4.38247, 1.29696
+elapsed time for k point: 2 seconds.
+velocity:, 221, #(0.2831921136001034 -5.7457164633670254e-8 2.7417785137351104e-10)
+solve_kpoint (4.40239,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 3 iterations.
+freqs:, 222, 4.40239, 0, 0, 4.40239, 1.3026
+elapsed time for k point: 2 seconds.
+velocity:, 222, #(0.2832295333865966 -5.6915391217965155e-8 -2.3390069833818816e-10)
+solve_kpoint (4.42231,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 3 iterations.
+freqs:, 223, 4.42231, 0, 0, 4.42231, 1.30824
+elapsed time for k point: 2 seconds.
+velocity:, 223, #(0.28326655461680345 -5.7905657158894754e-8 2.7210572051887004e-10)
+solve_kpoint (4.44223,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 3 iterations.
+freqs:, 224, 4.44223, 0, 0, 4.44223, 1.31388
+elapsed time for k point: 2 seconds.
+velocity:, 224, #(0.2833032230959159 -5.7386352968628916e-8 -2.223487412196363e-10)
+solve_kpoint (4.46215,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 3 iterations.
+freqs:, 225, 4.46215, 0, 0, 4.46215, 1.31953
+elapsed time for k point: 3 seconds.
+velocity:, 225, #(0.28333949511521855 -5.833608663430965e-8 2.6950720806133133e-10)
+solve_kpoint (4.48207,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 3 iterations.
+freqs:, 226, 4.48207, 0, 0, 4.48207, 1.32517
+elapsed time for k point: 3 seconds.
+velocity:, 226, #(0.28337543079168354 -5.7838708408922757e-8 -2.115090624845718e-10)
+solve_kpoint (4.50199,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 3 iterations.
+freqs:, 227, 4.50199, 0, 0, 4.50199, 1.33082
+elapsed time for k point: 3 seconds.
+velocity:, 227, #(0.2834109747145785 -5.875001867767804e-8 2.665174228737711e-10)
+solve_kpoint (4.52191,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 3 iterations.
+freqs:, 228, 4.52191, 0, 0, 4.52191, 1.33646
+elapsed time for k point: 3 seconds.
+velocity:, 228, #(0.28344619601521154 -5.8273799234594545e-8 -2.012752213716835e-10)
+solve_kpoint (4.54183,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 3 iterations.
+freqs:, 229, 4.54183, 0, 0, 4.54183, 1.34211
+elapsed time for k point: 2 seconds.
+velocity:, 229, #(0.2834810318959741 -5.9148359399210314e-8 2.632510364265429e-10)
+solve_kpoint (4.56175,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 3 iterations.
+freqs:, 230, 4.56175, 0, 0, 4.56175, 1.34776
+elapsed time for k point: 2 seconds.
+velocity:, 230, #(0.283515556985614 -5.8692387120028124e-8 -1.9155376186706788e-10)
+solve_kpoint (4.58167,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 2 iterations.
+freqs:, 231, 4.58167, 0, 0, 4.58167, 1.3534
+elapsed time for k point: 1 seconds.
+velocity:, 231, #(0.28355180080343423 -5.887275163847777e-8 -1.5217707462263122e-10)
+solve_kpoint (4.60159,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 2 iterations.
+freqs:, 232, 4.60159, 0, 0, 4.60159, 1.35905
+elapsed time for k point: 1 seconds.
+velocity:, 232, #(0.28358416726457913 -5.8879459840208136e-8 -2.7484152803037635e-10)
+solve_kpoint (4.62151,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 3 iterations.
+freqs:, 233, 4.62151, 0, 0, 4.62151, 1.3647
+elapsed time for k point: 2 seconds.
+velocity:, 233, #(0.28361650538280464 -5.966409415676774e-8 2.411081210940211e-10)
+solve_kpoint (4.64143,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 2 iterations.
+freqs:, 234, 4.64143, 0, 0, 4.64143, 1.37035
+elapsed time for k point: 1 seconds.
+velocity:, 234, #(0.2836524570625417 -5.980711341159271e-8 1.3681683237912767e-10)
+solve_kpoint (4.66135,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 2 iterations.
+freqs:, 235, 4.66135, 0, 0, 4.66135, 1.376
+elapsed time for k point: 2 seconds.
+velocity:, 235, #(0.28368381121171365 -6.002955915845108e-8 2.1174484456084548e-10)
+solve_kpoint (4.68127,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 3 iterations.
+freqs:, 236, 4.68127, 0, 0, 4.68127, 1.38165
+elapsed time for k point: 2 seconds.
+velocity:, 236, #(0.28371493102381673 -5.968942205863885e-8 -7.47386809000217e-11)
+solve_kpoint (4.7012,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 2 iterations.
+freqs:, 237, 4.7012, 0, 0, 4.7012, 1.38731
+elapsed time for k point: 1 seconds.
+velocity:, 237, #(0.2837498753621978 -5.987771305378997e-8 -1.255028686611715e-10)
+solve_kpoint (4.72112,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 2 iterations.
+freqs:, 238, 4.72112, 0, 0, 4.72112, 1.39296
+elapsed time for k point: 1 seconds.
+velocity:, 238, #(0.28378035400597384 -5.98037672288129e-8 -2.4832988896557873e-10)
+solve_kpoint (4.74104,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 3 iterations.
+freqs:, 239, 4.74104, 0, 0, 4.74104, 1.39861
+elapsed time for k point: 2 seconds.
+velocity:, 239, #(0.28381068857971403 -6.05507527775878e-8 2.428631135758604e-10)
+solve_kpoint (4.76096,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 2 iterations.
+freqs:, 240, 4.76096, 0, 0, 4.76096, 1.40427
+elapsed time for k point: 1 seconds.
+velocity:, 240, #(0.28384461317041426 -6.067532417156755e-8 1.3511014477999352e-10)
+solve_kpoint (4.78088,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 2 iterations.
+freqs:, 241, 4.78088, 0, 0, 4.78088, 1.40992
+elapsed time for k point: 2 seconds.
+velocity:, 241, #(0.2838742320182148 -6.086025641061519e-8 2.0067412054096453e-10)
+solve_kpoint (4.8008,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 3 iterations.
+freqs:, 242, 4.8008, 0, 0, 4.8008, 1.41558
+elapsed time for k point: 2 seconds.
+velocity:, 242, #(0.28390362684531995 -6.062163363723886e-8 -3.610928544167721e-11)
+solve_kpoint (4.82072,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 2 iterations.
+freqs:, 243, 4.82072, 0, 0, 4.82072, 1.42123
+elapsed time for k point: 2 seconds.
+velocity:, 243, #(0.2839365803858432 -6.077229248421846e-8 -1.0507348610673463e-10)
+solve_kpoint (4.84064,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 2 iterations.
+freqs:, 244, 4.84064, 0, 0, 4.84064, 1.42689
+elapsed time for k point: 1 seconds.
+velocity:, 244, #(0.28396538098846263 -6.069914480539854e-8 -2.2245893819321015e-10)
+solve_kpoint (4.86056,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 3 iterations.
+freqs:, 245, 4.86056, 0, 0, 4.86056, 1.43254
+elapsed time for k point: 2 seconds.
+velocity:, 245, #(0.2839939833007296 -6.137318074061764e-8 2.3591364754071303e-10)
+solve_kpoint (4.88048,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 2 iterations.
+freqs:, 246, 4.88048, 0, 0, 4.88048, 1.4382
+elapsed time for k point: 1 seconds.
+velocity:, 246, #(0.2840260046270216 -6.14828278445537e-8 1.3164858203406544e-10)
+solve_kpoint (4.9004,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 2 iterations.
+freqs:, 247, 4.9004, 0, 0, 4.9004, 1.44386
+elapsed time for k point: 2 seconds.
+velocity:, 247, #(0.28405400767513583 -6.162539393954657e-8 1.8693696676896762e-10)
+solve_kpoint (4.92032,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 3 iterations.
+freqs:, 248, 4.92032, 0, 0, 4.92032, 1.44952
+elapsed time for k point: 3 seconds.
+velocity:, 248, #(0.2840817887707906 -6.144704025234868e-8 -8.730814923217614e-12)
+solve_kpoint (4.94024,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 2 iterations.
+freqs:, 249, 4.94024, 0, 0, 4.94024, 1.45518
+elapsed time for k point: 1 seconds.
+velocity:, 249, #(0.28411290111361737 -6.15722848169666e-8 -8.819580711185731e-11)
+solve_kpoint (4.96016,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 2 iterations.
+freqs:, 250, 4.96016, 0, 0, 4.96016, 1.46084
+elapsed time for k point: 2 seconds.
+velocity:, 250, #(0.2841401406896698 -6.149230467356163e-8 -1.9967996351272714e-10)
+solve_kpoint (4.98008,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 2 iterations.
+freqs:, 251, 4.98008, 0, 0, 4.98008, 1.4665
+elapsed time for k point: 2 seconds.
+velocity:, 251, #(0.2841676123115968 -6.157077683360829e-8 -1.8505849858967693e-10)
+solve_kpoint (5,0,0):
+Solving for bands 1 to 1...
+Finished solving for bands 1 to 1 after 2 iterations.
+freqs:, 252, 5, 0, 0, 5, 1.47216
+elapsed time for k point: 2 seconds.
+velocity:, 252, #(0.28419509825613004 -6.160655434572559e-8 -1.9234005516233625e-10)
+Band 1 range: 0.0 at #(0.0 0.0 0.0) to 1.4721597445522336 at #(5.0 0.0 0.0)
+total elapsed time for run: 14 minutes, 17 seconds.
+done.
+
+Some deprecated features have been used.  Set the environment
+variable GUILE_WARN_DEPRECATED to "detailed" and rerun the
+program to get more information.  Set it to "no" to suppress
+this message.
