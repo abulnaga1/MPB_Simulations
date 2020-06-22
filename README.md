@@ -39,10 +39,12 @@ With this discussion of units out of the way, we can define the physical paramet
 
 Next, we define our simulation window and waveguide dimension variables. We consider our waveguide to be oriented along the x direction, we will define our structures in the YZ plane
 
+'''
 (define-param w 1)              ;Width of the waveguide in units of a (e.g. here 0.28 = 0.28um since a=1um)
 (define-param h 0.5)            ;Height of the waveguide
 (define-param Y 10)             ;Size of computational cell in Y direction, in units of a
 (define-param"Z 10)             ;Size of computational cell in Z direction
+'''
 
 Next, we need to define the permittivity values for our geometrical objects. In our case we consider a GaAs waveguide on a Diamond substrate, and we use the index values for &lambda; = 1250nm. For more information on the importance of material dispersion values, [see the later section](link).
 
