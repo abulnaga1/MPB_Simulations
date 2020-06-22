@@ -1,4 +1,4 @@
-function band_plotter(h,w)%,legend_string)
+function band_plotter(h,w)
 %Authors:   Alex Abulnaga, Sacha Welinski
 %Date:      2019-08-15
 %Title:     band_plotter.m
@@ -25,16 +25,13 @@ for i = 1:length(h)
 end
 
 %Plot light lines
-%plot(data_band(:,5,number),data_band(:,5,number),'--') % air
-plot(kvals,kvals./sqrt(5.7),'--') % Diamond
-plot(kvals,kvals./sqrt(11.67),'--') % GaAs
+%plot(kvals,kvals./sqrt(5.7),'--') % Diamond
+%plot(kvals,kvals./sqrt(11.67),'--') % GaAs
 hold off;
 
 title('Band Dispersion in MPB Units')
 ylabel('wa/2\pic')
 xlabel('ka/2\pi')
-%xlim(xlimits)
-%legend(legend_string)
 saveas(gcf,'Band_Dispersion.fig');
 
 end
