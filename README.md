@@ -7,8 +7,8 @@ The purpose is not to give a comprehensive introduction to MPB, but rather to de
 1. [Introduction](#introduction)
 2. [Fixed Index Simulations](#fixed_index_sims)
     1. [Band simulation](#Band_simulation)
-    2. Electric field simulations
-    3. Mode profile simulation
+    2. [Electric field simulations](#field_simulations)
+    3. [Using a job manager to perform parameter sweeps](#parameter_sweeps)
 3. [Including Matrial Dispersion](#paragraph2)
     1. Material Dipsersion Models
     2. Using SLURM and Matlab to generate a parameter list to simulate
@@ -109,3 +109,54 @@ At this point one can use their method of choice for cleaning up and displaying 
 ![alt text](https://github.com/abulnaga1/MPB_Simulations/blob/master/No%20Dispersion%20Parameter%20Sweeps/Examples/500nm%20x%20100nm%20waveguide/band_Dispersion.png "Band dispersion") 
 ![alt text](https://github.com/abulnaga1/MPB_Simulations/blob/master/No%20Dispersion%20Parameter%20Sweeps/Examples/500nm%20x%20100nm%20waveguide/Vg_vs_L_real_units.png "Group velocity")
 ![alt text](https://github.com/abulnaga1/MPB_Simulations/blob/master/No%20Dispersion%20Parameter%20Sweeps/Examples/500nm%20x%20100nm%20waveguide/Dispersion_vs_L_real_units.png "Dispersion")
+
+
+### Electric Field Simulations <a name="field_simulations"></a>
+In addition to simulating the band dispersion for our waveguide, we can look at the complex-valued electric field amplitude. The simulation file [wg3d_e_fields](https://github.com/abulnaga1/MPB_Simulations/blob/master/No%20Dispersion%20Parameter%20Sweeps/MPB%20Simulation%20Code/wg3d_e_fields.ctl) is quite similar to our band simulation in the previous section with a few key changes. We will make use of the mpb [find-k](https://mpb.readthedocs.io/en/latest/Scheme_User_Interface/#the-inverse-problem-k-as-a-function-of-frequency) feature to solve for the electric field at a chosen frequency without knowing apriori the corresponding k-point. At the top of our simulation window we add the following four commands
+
+```scheme
+(define-param omega 0.64516)    ;w_1550 = 0.64516129032 , w_946 = 1.05708245243
+(define-param kguess 2.5)		;Guessed k value
+(define-param kmin 0)			;kmin_tel = 0, kmin_siv = 1.5
+(define-param kmax 5)           ;kmax_tel = 3, kmax_siv = 4.5 
+```
+
+As the names suggest, omega is the frequency point of interest in mpb units. In this case, an mpb frequency of 0.64516 corresponds to a free space wavelength of 1550nm.
+To find the k-point corresponding to this frequency and calculate the electric fields at this point we simply run the following command
+
+```scheme
+(find-k NO-PARITY omega 1 1 (vector3 1 0 0) 0.0001 kguess kmin kmax fix-efield-phase output-efield)
+```
+As before we run the simulation from our terminal using the mpb command
+
+```C
+wg3d_e_fields.ctl >& wg3d_e_fields_tel-0.5-1.out
+```
+
+The field amplitudes are saved as a .h5 file 'wg3d_e_fields-e.k01.b01.h5'. One can use their h5 editor of choice to analyze the fields, or if more convenient this data can be converted to .txt files for further processing.
+
+```
+h5totxt -0 -x 0 wg3d_e_fields-e.k01.b01.h5:x.i >& e-1550-h-0.5-w-1-x-i.txt
+h5totxt -0 -x 0 wg3d_e_fields-e.k01.b01.h5:x.r >& e-1550-h-0.5-w-1-x-r.txt
+h5totxt -0 -x 0 wg3d_e_fields-e.k01.b01.h5:y.i >& e-1550-h-0.5-w-1-y-i.txt
+h5totxt -0 -x 0 wg3d_e_fields-e.k01.b01.h5:y.r >& e-1550-h-0.5-w-1-y-r.txt
+h5totxt -0 -x 0 wg3d_e_fields-e.k01.b01.h5:z.i >& e-1550-h-0.5-w-1-z-i.txt
+h5totxt -0 -x 0 wg3d_e_fields-e.k01.b01.h5:z.r >& e-1550-h-0.5-w-1-z-r.txt
+```
+
+Where we have separately extracted each field amplitude component. The matlab file [overlap_calculator.m](https://github.com/abulnaga1/MPB_Simulations/blob/master/No%20Dispersion%20Parameter%20Sweeps/MPB%20Analysis%20Code/overlap_calculator.m) provides an example of how one can simulate the field amplitudes at two different frequencies then approximate the overlap between the two modes using a trapezoidal integral. This code restricts the integral to the waveguide region and so the output dielectric profile is required. MPB provides the dielectric function in .h5 format which can also be converted to text.
+
+```C
+h5totxt -0 -x 0 wg3d_e_fields-epsilon.h5:data >& epsilon-0.5-1.txt
+```
+
+Where we have taken a slice of the YZ plane in which our waveguide is defined by specifying the normal axis by the "-x" flag.
+If instead of the full field amplitudes we only wanted the field power, we could modify our run command as follows
+
+```scheme
+(find-k NO-PARITY omega 1 1 (vector3 1 0 0) 0.0001 kguess kmin kmax output-dpwr)
+```
+and simply use the [h5topng](https://github.com/NanoComp/h5utils/blob/master/doc/h5topng-man.md) command to produce an image of the mode profile.
+
+
+### Using a Job Manager to Perform Parameter Sweeps <a name="parameter_sweeps"></a>
