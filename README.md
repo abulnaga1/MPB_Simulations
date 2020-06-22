@@ -95,6 +95,6 @@ We then define the number of bands we want to simulate, one in our case as we wa
 Now that we have walked through setting up our simulation code, we can put everything together into a .ctl file that we name [wg3d.ctl](https://github.com/abulnaga1/MPB_Simulations/blob/master/No%20Dispersion%20Parameter%20Sweeps/MPB%20Simulation%20Code/wg3d_vg.ctl) and run it using MPB. To do this we simply navigate to the location where the ctl file is saved in our terminal and execute the command
 
 ```C
-mpb wg3d.ctl > wg3d_gvd.ctl >& wg_gvd.out
+mpb wg3d_gvd.ctl >& wg_gvd.out
 ```
 This executes the simulation and saves the output into the wg_gvd.out file.
