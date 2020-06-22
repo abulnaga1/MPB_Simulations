@@ -48,12 +48,15 @@ Next, we define our simulation window and waveguide dimension variables. We cons
 
 Next, we need to define the permittivity values for our geometrical objects. In our case we consider a GaAs waveguide on a Diamond substrate, and we use the index values for &lambda; = 1250nm. For more information on the importance of material dispersion values, [see the later section](link).
 
+```scheme
 (define-param eps_wg 12)        ;The permittivity of the waveguide; GaAs in this case
 (define-param eps_bkg 1)        ;The permittivity of the background media, vacuum in this case
 (define-param eps_sub 5.7)      ;The permittivity of the substrate, Diamond in this case
+```
 
 Now that we have initialized all our object variables, we can go ahead and define our structures. We start by defining our background material, vacuum in our case, then we define a block of diamond which is our substrate material. We then define our waveguide. We do a little bit of math to make sure our waveguide lies directly on our substrate.
 
+```scheme
 ;Define the geometric lattice and the waveguide 
 ;Waveguide normal is taken to be in the x direction
 ;We set no-size in both X as there is no variation in this directions
@@ -70,20 +73,25 @@ Now that we have initialized all our object variables, we can go ahead and defin
             (center 0 0 0)                                      ;Center the waveguide
             (size infinity w h)                                 ;Define the waveguide YZ cross-section
             (material (make dielectric (epsilon eps_wg))))))    ;Define waveguide material
-            
+```
+
 Next, we define the resolution of our simulation. The resolution defines the number of simulation points per unit a. We will use a resolution of 64 which corresponds to a physical grid resolution of ~16nm.
 
+```scheme
 (set-param! resolution 64)                                               ;Define the # of pixels per unit distance (a) in the simulation
+```
 
 Lastly, we need to define what it is we want to compute. First, we need to define which k-points we want to execute our simulation at. As we are interested in seeing our band profile, we will define a uniformly spaced grid of k-points covering a large range.
 
 We then define the number of bands we want to simulate, one in our case as we want to look at the fundamental mode, and lastly we add an additional output function to the "run" command instructing mpb to compute the group velocity at each k-point in addition to computing the corresponding frequency. It is at this point that we again caution the reader on the importance of material dispersion for accurately computing the group velocity at a large range of wavelengths. We recommend taking the time to understand how mpb [computes](https://mpb.readthedocs.io/en/latest/Scheme_User_Interface/#group-velocities) the group velocity. We will discuss this further in the [material dispersion](link) section.
 
+```scheme
 (set-param! resolution 64)                                               ;Define the # of pixels per unit distance (a) in the simulation
 ;Define the quantities to compute
 (set! k-points (interpolate 250 (list (vector3 0 0 0) (vector3 5 0 0)))) ;Calculate k values between k=0 to k=5
 (set-param! num-bands 1)                                                 ;Number of freqency bands to compute. In our case we care only about the fundamental mode
 (run display-group-velocities)                                           ;We run the simulation with an additional output of the group velocities
+```
 
 Now that we have walked through setting up our simulation code, we can put everything together into a .ctl file and run it using MPB.
 We could also have entered mpb in interactive mode and run the commands one at at time, but executing the code from saved files will allow us to later perform parameter sweeps by simply changing our defined parameters when executing the simulation. We will touch on this briefly.
