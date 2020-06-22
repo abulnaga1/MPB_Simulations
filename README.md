@@ -37,13 +37,13 @@ Where our choise of a defines our real units. For example, if our simulation is 
 
 With this discussion of units out of the way, we can define the physical parameters of our simulation. The first thing we need to do is decide the size of our simulation region. It is important that the simulation window be large enough so that we avoid any simulation artefacts from folding of the bands for our choice of supercell region. For more info we refer the reader to the following [excellent text](http://ab-initio.mit.edu/book/). In our case we will consider a 500nm x 1000nm cross-section waveguide, so a simulation window of 10&mu;m x 10&mu;m will be more than sufficient.
 
-Next, we define our simulation window and waveguide dimension variables. We consider our waveguide to be oriented along the x direction, we will define our structures in the YZ plane
+Next, we define our simulation window and waveguide dimension variables. We consider our waveguide to be oriented along the x direction, we will define our structures in the YZ plane. We will define all our parameters using the "define-param" function in mpb as it will allow us to change some of the parameters when executing the simulation without having to modify the code itself. We will discuss this further in the section on [parameter sweeps](link).
 
 ```scheme
 (define-param w 1)              ;Width of the waveguide in units of a (e.g. here 0.28 = 0.28um since a=1um)
 (define-param h 0.5)            ;Height of the waveguide
 (define-param Y 10)             ;Size of computational cell in Y direction, in units of a
-(define-param"Z 10)             ;Size of computational cell in Z direction
+(define-param Z 10)             ;Size of computational cell in Z direction
 ```
 
 Next, we need to define the permittivity values for our geometrical objects. In our case we consider a GaAs waveguide on a Diamond substrate, and we use the index values for &lambda; = 1250nm. For more information on the importance of material dispersion values, [see the later section](link).
@@ -78,7 +78,7 @@ Now that we have initialized all our object variables, we can go ahead and defin
 Next, we define the resolution of our simulation. The resolution defines the number of simulation points per unit a. We will use a resolution of 64 which corresponds to a physical grid resolution of ~16nm.
 
 ```scheme
-(set-param! resolution 64)                                               ;Define the # of pixels per unit distance (a) in the simulation
+(set-param! resolution 64)      ;Define the # of pixels per unit distance (a) in the simulation
 ```
 
 Lastly, we need to define what it is we want to compute. First, we need to define which k-points we want to execute our simulation at. As we are interested in seeing our band profile, we will define a uniformly spaced grid of k-points covering a large range.
@@ -92,6 +92,9 @@ We then define the number of bands we want to simulate, one in our case as we wa
 (set-param! num-bands 1)                                                 ;Number of freqency bands to compute. In our case we care only about the fundamental mode
 (run display-group-velocities)                                           ;We run the simulation with an additional output of the group velocities
 ```
+Now that we have walked through setting up our simulation code, we can put everything together into a .ctl file that we name [wg3d.ctl](https://github.com/abulnaga1/MPB_Simulations/blob/master/No%20Dispersion%20Parameter%20Sweeps/MPB%20Simulation%20Code/wg3d_vg.ctl) and run it using MPB. To do this we simply navigate to the location where the ctl file is saved in our terminal and execute the command
 
-Now that we have walked through setting up our simulation code, we can put everything together into a .ctl file and run it using MPB.
-We could also have entered mpb in interactive mode and run the commands one at at time, but executing the code from saved files will allow us to later perform parameter sweeps by simply changing our defined parameters when executing the simulation. We will touch on this briefly.
+```C
+mpb wg3d.ctl > wg3d_gvd.ctl >& wg_gvd.out
+```
+This executes the simulation and saves the output into the wg_gvd.out file.
