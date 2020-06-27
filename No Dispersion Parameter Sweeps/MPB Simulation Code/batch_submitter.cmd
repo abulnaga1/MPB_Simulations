@@ -47,7 +47,7 @@ TUPLES=("0.66","0.25" "0.68","0.25" "0.7","0.25"
 IFS="," read h w <<< "${TUPLES[$SLURM_ARRAY_TASK_ID]}"
 echo "${h} ${w}"
 
-cd /scratch/gpfs/aa22/mpb/3dwavguide/diamond/2020-03-27/h-160-500-w-250-1100
+cd /your_folder
 mkdir $h-$w
 mkdir images
 mkdir images/dpwr
@@ -99,16 +99,16 @@ h5totxt -0 -x 0 wg3d_e_fields-e.k01.b01.h5:z.r >& e-946-h-$h-w-$w-z-r.txt
 #D-pwr, Telecom
 mpb h=$h w=$w eps_wgd=11.3569 eps_sub=5.7016 eps_sin=3.9852 omega=0.64516129032 kguess=1.55 kmin=0 kmax=3 wg3d_dpwr.ctl >& wg3d_dpwr_tel-$h-$w.out
 h5topng -c bluered -x -0 wg3d_dpwr-dpwr.k01.b01.h5:data
-mv wg3d_dpwr-dpwr.k01.b01.png /scratch/gpfs/aa22/mpb/3dwavguide/diamond/2020-03-27/h-160-500-w-250-1100/images/dpwr/1550/h-$h-w-$w.png
+mv wg3d_dpwr-dpwr.k01.b01.png /your_folder/images/dpwr/1550/h-$h-w-$w.png
 
 #D-pwr, SiV
 mpb h=$h w=$w eps_wgd=12.5580 eps_sub=5.7413 eps_sin=4.0647 omega=1.05708245243 kguess=3.3 kmin=1.5 kmax=4.5 wg3d_dpwr.ctl >& wg3d_dpwr_siv-$h-$w.out
 h5topng -c bluered -x -0 wg3d_dpwr-dpwr.k01.b01.h5:data
-mv wg3d_dpwr-dpwr.k01.b01.png /scratch/gpfs/aa22/mpb/3dwavguide/diamond/2020-03-27/h-160-500-w-250-1100/images/dpwr/946/h-$h-w-$w.png
+mv wg3d_dpwr-dpwr.k01.b01.png /your_folder/images/dpwr/946/h-$h-w-$w.png
 
 #Save the dielectric image
 h5topng -x -0 wg3d_dpwr-epsilon.h5:data
-mv wg3d_dpwr-epsilon.png /scratch/gpfs/aa22/mpb/3dwavguide/diamond/2020-03-27/h-160-500-w-250-1100/images/epsilon/h-$h-w-$w.png
+mv wg3d_dpwr-epsilon.png /your_folder/images/epsilon/h-$h-w-$w.png
 
 rm *.h5
 rm *.png
