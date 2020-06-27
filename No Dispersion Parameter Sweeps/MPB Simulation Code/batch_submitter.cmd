@@ -49,11 +49,11 @@ echo "${h} ${w}"
 
 cd /scratch/gpfs/aa22/mpb/3dwavguide/diamond/2020-03-27/h-160-500-w-250-1100
 mkdir $h-$w
-#mkdir images
-#mkdir images/dpwr
-#mkdir images/dpwr/946
-#mkdir images/dpwr/1550
-#mkdir images/epsilon
+mkdir images
+mkdir images/dpwr
+mkdir images/dpwr/946
+mkdir images/dpwr/1550
+mkdir images/epsilon
 
 cp wg3d_e_fields.ctl $h-$w
 cp wg3d_vg.ctl $h-$w
@@ -63,11 +63,11 @@ cp wg3d_dpwr.ctl $h-$w
 cd $h-$w
 
 #Vg Calculations, Telecom
-mpb h=$h w=$w eps_hi=11.3569 eps_dia=5.7016 eps_sin=3.9852 omega=0.64516129032 kguess=1.55 kmin=0 kmax=3 wg3d_vg.ctl >& wg_vg_tel-$h-$w.out
+mpb h=$h w=$w eps_wgd=11.3569 eps_sub=5.7016 eps_sin=3.9852 omega=0.64516129032 kguess=1.55 kmin=0 kmax=3 wg3d_vg.ctl >& wg_vg_tel-$h-$w.out
 grep velocity wg_vg_tel-$h-$w.out > velocity_tel-$h-$w.dat
 
 #Vg Calculations, SiV
-mpb h=$h w=$w eps_hi=12.5580 eps_dia=5.7413 eps_sin=4.0647 omega=1.05708245243 kguess=3.3 kmin=1.5 kmax=4.5 wg3d_vg.ctl >& wg_vg_siv-$h-$w.out
+mpb h=$h w=$w eps_wgd=12.5580 eps_sub=5.7413 eps_sin=4.0647 omega=1.05708245243 kguess=3.3 kmin=1.5 kmax=4.5 wg3d_vg.ctl >& wg_vg_siv-$h-$w.out
 grep velocity wg_vg_siv-$h-$w.out > velocity_siv-$h-$w.dat
 
 #Band Calculation, 1250nm
@@ -76,7 +76,7 @@ grep freqs wg_gvd-$h-$w.out > wg_gvd-$h-$w-bands.dat
 grep velocity wg_gvd-$h-$w.out > wg_gvd-$h-$w-vel.dat
 
 #E fields, Telecom
-mpb h=$h w=$w eps_hi=11.3569 eps_dia=5.7016 eps_sin=3.9852 omega=0.64516129032 kguess=1.55 kmin=0 kmax=3 wg3d_e_fields.ctl >& wg3d_e_fields_tel-$h-$w.out
+mpb h=$h w=$w eps_wgd=11.3569 eps_sub=5.7016 eps_sin=3.9852 omega=0.64516129032 kguess=1.55 kmin=0 kmax=3 wg3d_e_fields.ctl >& wg3d_e_fields_tel-$h-$w.out
 h5totxt -0 -x 0 wg3d_e_fields-epsilon.h5:data >& epsilon-$h-$w.txt
 
 h5totxt -0 -x 0 wg3d_e_fields-e.k01.b01.h5:x.i >& e-1550-h-$h-w-$w-x-i.txt
@@ -87,7 +87,7 @@ h5totxt -0 -x 0 wg3d_e_fields-e.k01.b01.h5:z.i >& e-1550-h-$h-w-$w-z-i.txt
 h5totxt -0 -x 0 wg3d_e_fields-e.k01.b01.h5:z.r >& e-1550-h-$h-w-$w-z-r.txt
 
 #E fields, SiV
-mpb h=$h w=$w eps_hi=12.5580 eps_dia=5.7413 eps_sin=4.0647 omega=1.05708245243 kguess=3.3 kmin=1.5 kmax=4.5 wg3d_e_fields.ctl >& wg3d_e_fields_siv-$h-$w.out
+mpb h=$h w=$w eps_wgd=12.5580 eps_sub=5.7413 eps_sin=4.0647 omega=1.05708245243 kguess=3.3 kmin=1.5 kmax=4.5 wg3d_e_fields.ctl >& wg3d_e_fields_siv-$h-$w.out
 
 h5totxt -0 -x 0 wg3d_e_fields-e.k01.b01.h5:x.i >& e-946-h-$h-w-$w-x-i.txt
 h5totxt -0 -x 0 wg3d_e_fields-e.k01.b01.h5:x.r >& e-946-h-$h-w-$w-x-r.txt
@@ -97,12 +97,12 @@ h5totxt -0 -x 0	wg3d_e_fields-e.k01.b01.h5:z.i >& e-946-h-$h-w-$w-z-i.txt
 h5totxt -0 -x 0 wg3d_e_fields-e.k01.b01.h5:z.r >& e-946-h-$h-w-$w-z-r.txt
 
 #D-pwr, Telecom
-mpb h=$h w=$w eps_hi=11.3569 eps_dia=5.7016 eps_sin=3.9852 omega=0.64516129032 kguess=1.55 kmin=0 kmax=3 wg3d_dpwr.ctl >& wg3d_dpwr_tel-$h-$w.out
+mpb h=$h w=$w eps_wgd=11.3569 eps_sub=5.7016 eps_sin=3.9852 omega=0.64516129032 kguess=1.55 kmin=0 kmax=3 wg3d_dpwr.ctl >& wg3d_dpwr_tel-$h-$w.out
 h5topng -c bluered -x -0 wg3d_dpwr-dpwr.k01.b01.h5:data
 mv wg3d_dpwr-dpwr.k01.b01.png /scratch/gpfs/aa22/mpb/3dwavguide/diamond/2020-03-27/h-160-500-w-250-1100/images/dpwr/1550/h-$h-w-$w.png
 
 #D-pwr, SiV
-mpb h=$h w=$w eps_hi=12.5580 eps_dia=5.7413 eps_sin=4.0647 omega=1.05708245243 kguess=3.3 kmin=1.5 kmax=4.5 wg3d_dpwr.ctl >& wg3d_dpwr_siv-$h-$w.out
+mpb h=$h w=$w eps_wgd=12.5580 eps_sub=5.7413 eps_sin=4.0647 omega=1.05708245243 kguess=3.3 kmin=1.5 kmax=4.5 wg3d_dpwr.ctl >& wg3d_dpwr_siv-$h-$w.out
 h5topng -c bluered -x -0 wg3d_dpwr-dpwr.k01.b01.h5:data
 mv wg3d_dpwr-dpwr.k01.b01.png /scratch/gpfs/aa22/mpb/3dwavguide/diamond/2020-03-27/h-160-500-w-250-1100/images/dpwr/946/h-$h-w-$w.png
 

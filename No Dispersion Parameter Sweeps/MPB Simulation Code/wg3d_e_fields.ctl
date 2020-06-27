@@ -16,7 +16,7 @@
 (define-param h 0.5)          	;Height of the waveguide
 (define-param Y 10)             ;Size of computational cell in Y direction, in units of a
 (define-param Z 10)             ;Size of computational cell in Z direction
-(define-param eps_wg 12)        ;Define the GaAs permittivity to be approximately the average between 946nm and 1550nm
+(define-param eps_wg 12)        ;Define the waveguide material
 (define-param eps_bkd 1)         ;By default, surrounding media is air, but we will later change this to SiO2
 (define-param eps_sub 5.7)      ;Diamond permittivity at telecom
 (define-param omega 1)          ;w_1550 = 0.64516129032 , w_946 = 1.05708245243
