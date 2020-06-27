@@ -128,10 +128,10 @@ TUPLES=("13.0249","5.7402","1.1111"
 "11.3231","5.6893","0.62422" 
 "11.3193","5.6891","0.62189")
 
-IFS="," read epshi epslo omega <<< "${TUPLES[$SLURM_ARRAY_TASK_ID]}"
-echo "${epshi} ${epslo} ${omega}"
+IFS="," read epswgd epssub omega <<< "${TUPLES[$SLURM_ARRAY_TASK_ID]}"
+echo "${epswgd} ${epssub} ${omega}"
 
-cd /scratch/gpfs/aa22/mpb/3dwavguide/diamond/2020-05-20/small_ar/0.1to1/h-632
+cd /your_folder
 mkdir $omega
 
 cp wg3d_vg.ctl $omega
@@ -139,10 +139,7 @@ cp wg3d_vg.ctl $omega
 cd $omega
 
 #w_mismatch Calculations, telecom
-mpb h=0.632 w=0.063 eps_hi=$epshi eps_sub=$epslo omega=$omega kguess=2.5 kmin=0 kmax=5 wg3d_vg.ctl >& wg_vg-$omega.out
-grep velocity wg_vg-$omega.out > velocity-$omega.dat
+mpb h=0.5 w=1 eps_wgd=$epswgd eps_sub=$epssub omega=$omega kguess=2.5 kmin=0 kmax=5 wg3d_vg.ctl >& wg_vg-$omega.out
 grep freqs wg_vg-$omega.out > freqs-$omega.dat
 
-
 rm *.h5
-rm *.png
