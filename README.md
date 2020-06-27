@@ -8,9 +8,7 @@ The purpose is not to give a comprehensive introduction to MPB, but rather to de
     1. [Band simulation](#Band_simulation)
     2. [Electric field simulations](#field_simulations)
     3. [Using a job manager to perform parameter sweeps](#parameter_sweeps)
-2. [Including Matrial Dispersion](#paragraph2)
-    1. Material Dipsersion Models
-    2. Using SLURM and Matlab to generate a parameter list to simulate
+2. [Including Material Dispersion](#material_dispersion)
 
 ## Fixed Index Simulations <a name="fixed_index_sims"></a>
 In this section we consider simulating the band diagram of a simple rectangular GaAs waveguide on a diamond substrate, with a background of air.
@@ -165,3 +163,11 @@ mpb w=1.2 wg3d_gvd.ctl >& wg_gvd.out
 This command tells mpb to execute our simulation with the parameter "w" set to 1.2 in MPB units. Similarly, we could change any of the defined parameters such as the waveguide height, "h", the waveguide permittivitiy, "eps_wgd", etc... 
 
 With this, we can easily see how we could run a parameter sweep wherein we change for example the width and height of the waveguide, and see how the bands change. The file [batch_submitter.cmd](https://github.com/abulnaga1/MPB_Simulations/blob/master/No%20Dispersion%20Parameter%20Sweeps/MPB%20Simulation%20Code/batch_submitter.cmd) gives an example of how we could do exactly this. We make use of a job submitter, [SLURM](https://slurm.schedmd.com/sbatch.html) in our case, execute a series of simulations with different waveguide heights and widths as defined by an array of tuples. The batch submitter creates a new folder for each simulation we plan to execute, copies the .ctl files into the folders, then executes the simulations with the desired parameters, extracts the outputs of interests, and cleans up the leftover .h5 files which can take up a lot of memory. The desired tuple array is can be generated using the [tuple_generator.m](https://github.com/abulnaga1/MPB_Simulations/blob/master/No%20Dispersion%20Parameter%20Sweeps/MPB%20Simulation%20Code/tuple_generator.m) file which creates a text file and a matlab variable file with the parameter instances formatted for copy-pasting directly into the batch submitter. All of our matlab analysis code is setup to process the resultant data as formatted by the batch submitter. For example the [worker_master.m](https://github.com/abulnaga1/MPB_Simulations/blob/master/No%20Dispersion%20Parameter%20Sweeps/MPB%20Analysis%20Code/worker_master.m) imports the simulated tuples and sweeps over all the folders to extract and plot the data.
+
+## Including Material Dispersion <a name="material_dispersion"></a>
+In the previous section we discussed how MPB can be used to simulate a simple waveguide and to extract dispersion curves. These simulations were all run at a single permitivity value, independent of the frequency and k-points at which the simulation is run. It is however very important to include the effects of material dispersion if one is interested in the device dispersion across a wide range of frequency points. In this section we will discuss how we can use the SLURM job manager discussed in the previous section to effectively run our simulations including the effects of material dispersion. Before we proceed, we need to make a quick note about the mpb [group velocities](https://mpb.readthedocs.io/en/latest/Scheme_User_Interface/#group-velocities) function made use of in the previous section. The MPB group velocity function utilizes Hellman-Feynmann theorem, at a fixed index for each point, to compute the group velocity. This function is not accurate when one wishes to include the effects of material dispersion. The below figure shows a comparison of the group velocity of a 220nm x 850nm GaAs waveguide on a diamond substrate computed in three ways: using the MPB group velocities function, using a finite difference methods computation from MPB, and using Lumerical MODE commercial software. Both MPB simulations are run including material dispersion with the method we will discuss soon.
+
+![alt text](https://github.com/abulnaga1/MPB_Simulations/blob/master/No%20Dispersion%20Parameter%20Sweeps/Examples/500nm%20x%20100nm%20waveguide/band_Dispersion.png "vg comparison") 
+
+We can see that the built in MPB group velocity function is inaccurate as compared to the commercial software, whereas the finite difference method matches quite well. The latter simulation is run as follows: we use the [tuple_generator_dispersion.m](link)
+
