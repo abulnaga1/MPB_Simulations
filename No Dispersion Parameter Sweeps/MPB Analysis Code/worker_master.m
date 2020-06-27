@@ -58,9 +58,9 @@ for i = 1:N
             gvd_1250(n) gvd_zerocross(n) vg_min_wavelength(n)];         
 end
 %Choose what data to plot and save
-band_plotter([0 2],h,w);
-vg_plotter([800 1600],h,w);
-D_plotter([700 1600],h,w);
+band_plotter(h,w);
+vg_plotter(h,w);
+D_plotter(h,w);
 master_plotter(master_data);
 top_params(master_data,10);
 
