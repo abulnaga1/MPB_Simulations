@@ -25,9 +25,9 @@ To convert between real and MPB units we can use the following conversion table.
 
 | MPB Ouput | Conversion to Real Units               |
 |----------|-------------------------|
-| &omega;<sub>mpb</sub>  | &omega; = $\frac{2 \pi c}{a}$&omega;<sub>mpb</sub> |
-| k<sub>mpb</sub>        | k = $\frac{2 \pi c}{a}$k<sub>mpb</sub>          |
-| &lambda;<sub>mpb</sub> | &lambda; = $\frac{a}{\omega_{mpb}}$             |
+| &omega;<sub>mpb</sub>  | &omega; = (2 &pi; c / a ) &omega;<sub>mpb</sub> |
+| k<sub>mpb</sub>        | k = (2 &pi; c / a) k<sub>mpb</sub>          |
+| &lambda;<sub>mpb</sub> | &lambda; = a / &omega;<sub>mpb</sub>             |
 
 Where our choise of a defines our real units. For example, if our simulation is defined in terms of a = $1 \mu m$, then an MPB frequency $\omega_{mpb} = 0.5$ corresponds to a physical wavelength of $\lambda$ = $\frac{1 \mu m}{0.5} = 2 \mu m$.
 
