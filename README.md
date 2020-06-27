@@ -27,7 +27,7 @@ To convert between real and MPB units we can use the following conversion table.
 | k<sub>mpb</sub>        | k = (2 &pi; c / a) k<sub>mpb</sub>          |
 | &lambda;<sub>mpb</sub> | &lambda; = a / &omega;<sub>mpb</sub>             |
 
-Where our choise of a defines our real units. For example, if our simulation is defined in terms of a = $1 \mu m$, then an MPB frequency $\omega_{mpb} = 0.5$ corresponds to a physical wavelength of $\lambda$ = $\frac{1 \mu m}{0.5} = 2 \mu m$.
+Where our choise of a defines our real units. For example, if our simulation is defined in terms of a = 1 &mu;m, then an MPB frequency &omega;<sub>mpb</sub> = 0.5 corresponds to a physical wavelength of &lambda; = (1 &mu;m / 0.5) = 2 &mu;m.
 
 With this discussion of units out of the way, we can define the physical parameters of our simulation. The first thing we need to do is decide the size of our simulation region. It is important that the simulation window be large enough so that we avoid any simulation artefacts from folding of the bands for our choice of supercell region. For more info we refer the reader to the following [excellent text](http://ab-initio.mit.edu/book/). In our case we will consider a 500nm x 1000nm cross-section waveguide, so a simulation window of 10&mu;m x 10&mu;m will be more than sufficient.
 
